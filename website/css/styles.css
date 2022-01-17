@@ -1,0 +1,110 @@
+/* styles for my website */
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+body {
+    background: #ffffff;
+
+}
+
+
+header {
+    /* height: 200px; */
+    background:#D4AF37; 
+    overflow:hidden; 
+    padding: 10px;
+    
+}
+
+#h1-header {
+    text-align: justify;
+    
+}
+
+#paragraph-header {
+    text-align: justify;
+    
+}
+
+
+#inner-header{
+    margin:20px auto; 
+    max-width: 1200px; 
+}
+
+nav ul{
+    float:right;
+}
+
+nav li {
+    float:left; 
+    margin-left: 15px;
+    list-style-type: none;
+}
+
+nav a{
+    text-decoration: none;
+}
+#wrapper {
+    margin:20px auto; 
+    max-width: 1200px; 
+
+}
+
+#hero {
+    height: 350px; 
+    background:#ffffff; 
+    margin-bottom:20px;
+    clear: both; 
+}
+
+
+
+main {
+    width: 750px;
+    height: 400px; 
+    margin-bottom:20px;
+    background: #ffffff;
+    float:left; 
+
+}
+
+#images {
+   
+    display: block; 
+    border-radius: 50%; 
+    width: 320px; 
+    margin: auto; 
+    float: right; 
+    overflow: hidden; 
+ 
+ }
+
+aside{
+    width:35%; 
+    height:300px; 
+    float: right; 
+}
+
+footer {
+    border-top: 1px solid #666; 
+    clear:both; 
+    height:30px;
+    line-height:50px;
+    text-align:center;
+    background: #D4AF37; 
+
+}
+
+footer li{
+    float:center; 
+    margin-right:20px;
+    list-style-type:none;
+    padding: 20px; 
+}
