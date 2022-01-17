@@ -45,7 +45,7 @@
     </div> <!--end h1-header-->
 
     <div id="images">
-        <img src="images/Me.jpg" alt="picforsite" width="230" height="300"/>
+        <img src="images/Me.jpg" alt="picforsite" width="250" height="300"/>
     </div><!--end images-->
 
     <div id="paragraph-header">
@@ -60,8 +60,8 @@
 <main>
 
     <div id = "mamppages">
-<img src="images/mamppage.jpg" alt="mamppage" width="600" height="400"/>
-<img src="images/page2.jpg" alt="mamppage2" width="600" height="400"/>
+<img src="images/mamppage.jpg" alt="mamppage" width="700" height="500"/>
+<img src="images/errorpage.jpg" alt="mamppage2" width="700" height="500"/>
 
     </div><!--end mamppages-->
 
@@ -70,9 +70,10 @@
 <aside>
    
     <h3>Weekly Exercises</h3>
-    <h5>Week 2</h5>
+    <h4>Week 2</h4>
         <ul>
         <li><a href="weeks/week2/var.php">Var.php</a></li>
+        <li><a href="weeks/week2/var2.php">Var2.php</a></li>
         <li><a href="weeks/week2/currency-logic.php">Currency-Logic.php.php</a></li>
         <li><a href="weeks/week2/currency.php">Currency.php</a></li>
         <li><a href="weeks/week2/heredoc.php">Heredoc.php</a></li>
@@ -89,6 +90,8 @@
     </li>
     <li>All Rights Reserved</li>
     <li><a href="../index.php">Web Design by Christine</a></li>
+    <li><a href="https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fchristine-it-261-portal.herokuapp.com%2F">HTML</a></li>
+    <li><a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fchristine-it-261-portal.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">CSS</a></li>
 </ul>
 </div> <!--end inner-footer-->
     </footer>
