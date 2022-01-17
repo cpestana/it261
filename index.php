@@ -61,7 +61,7 @@
 
     <div id = "mamppages">
 <img src="images/mamppage.jpg" alt="mamppage" width="500" height="375"/>
-<img src="images/errorpage.jpg" alt="mamppage2" width="500" height="3750"/>
+<img src="images/errorpage.jpg" alt="mamppage2" width="500" height="375"/>
 
     </div><!--end mamppages-->
 
