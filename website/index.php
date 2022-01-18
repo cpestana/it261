@@ -55,7 +55,7 @@
 
       
 
-</div><!---end hero--->
+</div><!--end hero-->
 
 <main>
 
