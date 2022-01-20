@@ -10,14 +10,13 @@
 
 <body>
 
-    <header>
-        
-
-        <img src="images/php.jpg" alt="logo" width="75" height="75"/>
-
+<header>
    
         
 <div id="innder-header">
+    <a href="index.php">
+<img src="images/php.jpg" alt="logo" width="75" height="75"/>
+    </a>
 
     <nav>
 
