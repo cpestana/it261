@@ -2,7 +2,7 @@
 //arrays remind me of a category, a category of fruits, names, 
 //navigation
 
-$fruits = arrays(
+$fruits = array(
     'bananas', 
     'strawberries', 
     'blueberries', 

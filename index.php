@@ -82,7 +82,7 @@
         </ul>
     <h4>Week 3</h4>
         <ul>
-        <li><a href="weeks/week2/week3/arrays.php">Arrays.php</a></li>
+        <li><a href="weeks/week3/arrays.php">Arrays.php</a></li>
         <li><a href="weeks/week3/if-else.php">If-Else.php</a></li>    
         <li><a href="weeks/week3/date.php">Date.php</a></li>
     </ul>
