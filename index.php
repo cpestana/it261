@@ -61,7 +61,7 @@
 
     <div id = "mamppages">
 <img src="images/mamppage.jpg" alt="mamppage" width="500" height="375"/>
-<img src="images/errorpage.jpg" alt="mamppage2" width="500" height="375"/>
+<img src="images/test_mamp3.jpg" alt="mamppage2" width="500" height="375"/>
 
     </div><!--end mamppages-->
 
@@ -77,7 +77,12 @@
         <li><a href="weeks/week2/currency.php">Currency.php</a></li>
         <li><a href="weeks/week2/heredoc.php">Heredoc.php</a></li>
         </ul>
-  
+    <h4>Week 3</h4>
+        <ul>
+        <li><a href="weeks/week2/week3/arrays.php">Arrays.php</a></li>
+        <li><a href="weeks/week3/if-else.php">If-Else.php</a></li>    
+        <li><a href="weeks/week3/date.php">Date.php</a></li>
+    </ul>
 </aside>
 </div> <!---end wrapper-->
 
