@@ -17,8 +17,9 @@
     <a href="index.php">
 <img src="images/php.jpg" alt="logo" width="75" height="75"/>
     </a>
-
-    <nav>
+</div> <!--end inner-header-->
+   
+<nav>
 
     <ul>
             <li><a href="Switch.php">Home</a></li>
@@ -30,12 +31,11 @@
          </ul>
 
     </nav>   
+
     </header>
     
-</div> <!--end inner-header-->
-    
 
- 
+    
 
 <div id="wrapper">
 
@@ -86,6 +86,7 @@
         <li><a href="weeks/week3/date.php">Date.php</a></li>
     </ul>
 </aside>
+
 </div> <!---end wrapper-->
 
     <footer>
@@ -101,6 +102,7 @@
 </ul>
 </div> <!--end inner-footer-->
     </footer>
+    
 
 </body>
 </html>
