@@ -63,8 +63,8 @@
 <main>
 
     <div id = "mamppages">
-<img src="images/mamppage.jpg" alt="mamppage" width="700" height="375"/>
-<img src="images/test_mamp3.jpg" alt="mamppage2" width="700" height="375"/>
+<img src="images/mamppage.jpg" alt="mamppage" width="680" height="375"/>
+<img src="images/test_mamp3.jpg" alt="mamppage2" width="680" height="375"/>
 
     </div><!--end mamppages-->
 
