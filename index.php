@@ -11,11 +11,13 @@
 <body>
 
     <header>
-        <h2>Christine Pestana</h2>
+        
 
         <img src="images/php.jpg" alt="logo" width="75" height="75"/>
+
+   
         
-        <div id="innder-header">
+<div id="innder-header">
 
     <nav>
 
@@ -29,10 +31,10 @@
          </ul>
 
     </nav>   
+    </header>
     
 </div> <!--end inner-header-->
-   
-    </header>
+    
 
  
 
@@ -46,7 +48,7 @@
     </div> <!--end h1-header-->
 
     <div id="images">
-        <img src="images/Me.jpg" alt="picforsite" width="250" height="300"/>
+        <img src="images/Me.jpg" alt="picforsite" width="250" height="325"/>
     </div><!--end images-->
 
     <div id="paragraph-header">
@@ -61,8 +63,8 @@
 <main>
 
     <div id = "mamppages">
-<img src="images/mamppage.jpg" alt="mamppage" width="600" height="375"/>
-<img src="images/test_mamp3.jpg" alt="mamppage2" width="600" height="375"/>
+<img src="images/mamppage.jpg" alt="mamppage" width="700" height="375"/>
+<img src="images/test_mamp3.jpg" alt="mamppage2" width="700" height="375"/>
 
     </div><!--end mamppages-->
 
