@@ -12,8 +12,9 @@
 
     <header>
         <h2>Christine Pestana</h2>
-        <img src="images/php.jpg" alt="logo" width="75" height="75"/>
 
+        <img src="images/php.jpg" alt="logo" width="75" height="75"/>
+        
         <div id="innder-header">
 
     <nav>
@@ -60,8 +61,8 @@
 <main>
 
     <div id = "mamppages">
-<img src="images/mamppage.jpg" alt="mamppage" width="500" height="375"/>
-<img src="images/test_mamp3.jpg" alt="mamppage2" width="500" height="375"/>
+<img src="images/mamppage.jpg" alt="mamppage" width="600" height="375"/>
+<img src="images/test_mamp3.jpg" alt="mamppage2" width="600" height="375"/>
 
     </div><!--end mamppages-->
 

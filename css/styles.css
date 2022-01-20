@@ -22,6 +22,7 @@ header {
     
 }
 
+
 #h1-header {
     text-align: justify;
     
@@ -53,7 +54,7 @@ nav a{
 }
 #wrapper {
     margin:20px auto; 
-    max-width: 1200px; 
+    max-width: 1300px; 
 
 }
 
@@ -115,9 +116,10 @@ aside li{
 footer {
     border-top: 2px solid #666; 
     clear:both; 
-    height:60px;
-    line-height:60px;
+    height: 100px;
+    line-height:5px;
     background: #D4AF37; 
+    padding: 15px 10px; 
     
 
 }
@@ -126,6 +128,6 @@ footer li{
     float:left; 
     margin-right:20px;
     list-style-type:none;
-    padding: 20px; 
+    padding: 30px; 
     text-align: center;
 }
