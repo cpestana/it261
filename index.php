@@ -39,10 +39,12 @@
     <div id="wrapper">
 
     <div id="hero">
-    
-    <img id="images" src="images/Me.jpg" alt="picforsite" width="250" height="325"/>
 
-   
+    <div id="heroRight">
+    <img id="images" src="images/Me.jpg" alt="picforsite" width="225" height="300"/>
+    </div><!--end heroRight-->
+
+    <div id="heroLeft">
     <h1>Christine's IT 261 Portal</h1>
 
     <p>Hello! I started Seattle Central College in 2020 and I am looking 
@@ -53,7 +55,7 @@
     I was ready to make a change in my life and take on a new challenge. I became 
     interested in web development and database administration when assisting my
     organization with developing their database. </p>
-    
+    </div><!--end heroLeft-->
 
    
     
