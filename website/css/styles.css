@@ -4,12 +4,9 @@
     margin:0;
     box-sizing: border-box;
 }
-html {
-    /* position:relative; */
-    /* min-height:100%; */
-}
+
 body {
-    background: white;
+    background: beige;
     /* min-height:100vh; */
 }
 header {
@@ -90,15 +87,17 @@ main li{
     margin:0 20px 20px 20px;
 }
 aside{
-    width:35%;
+    width:50%;
     /* height: 300px; */
     background: white;
     float:right;
+    margin-right: 10px;
+    margin-top: 10px; 
 }
 
 #birdPhoto{
-    width:100%;
-    height:60%;
+    width:60%;
+    height:50%;
     margin:0 auto;
     border: 5px solid beige;
     border-radius:10%;
@@ -109,7 +108,7 @@ aside{
 #image{
     clear:both;
     margin:0 auto;
-    border-radius:10%;
+    border-radius:0%;
     overflow:hidden;
     
     /* max-width:90px;  */
@@ -168,12 +167,12 @@ aside{
 }
 
 footer{
-    height:50px;
+    height:2px;
     line-height:50px;
     border-top:1px dotted rgb(4, 102, 41);
-    clear:both;
     /* position:absolute; */
-    bottom:0;    
+    bottom: 2%;
+    clear: both;    
 }
 footer ul{
     /* float:right; */
@@ -182,13 +181,13 @@ footer ul{
 footer li {
     float:left;
     list-style-type:none;
-    margin-left:20px;
+    margin-left:50px;
 }
 
 
 aside h3{
-    padding:4px;
+    padding:2px;
 }
 aside p{
-    padding:4px;
+    padding:2px;
 }
