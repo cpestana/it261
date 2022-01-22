@@ -73,7 +73,7 @@
 
     <aside>
    
-        <h3>Weekly Exercises</h3>
+        <h3>Weekly Class Exercises</h3>
         <h4>Week 2</h4>
         <ul>
         <li><a href="weeks/week2/var.php">Var.php</a></li>
