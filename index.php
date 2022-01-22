@@ -21,7 +21,7 @@
         <nav>
 
             <ul>
-            <li><a href="Switch.php">Home</a></li>
+            <li><a href="website/daily.php">Switch</a></li>
             <li><a href="Troubleshoot.php">Troubleshoot</a></li>
             <li><a href="Calculator.php">Calculator</a></li>
             <li><a href="Email.php">Email</a></li>

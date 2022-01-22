@@ -32,16 +32,14 @@ $nav['gallery.php'] = 'Gallery';
 </head>
 <header>
    
-<div id="innder-header">
 
-             <a href="index.php">
-        <img src="images/php.jpg" alt="logo" width="75" height="75"/>
-             </a>
+
+        
 
     <nav>
 
     <ul>
-            <li><a href="Switch.php">Home</a></li>
+            <li><a href="daily.php">Switch</a></li>
             <li><a href="Troubleshoot.php">Troubleshoot</a></li>
             <li><a href="Calculator.php">Calculator</a></li>
             <li><a href="Email.php">Email</a></li>
