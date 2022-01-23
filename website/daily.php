@@ -8,13 +8,13 @@ if(isset($_GET['today'])){
     $today = date('l');
 }
 $day_array = array(
-    "Bald Eagle" => "Sunday",
-    "Peregrine Falcon" => "Monday",
-    "Osprey" => "Tuesday",
-    "California Condor" => "Wednesday",
-    "American Kestrel" => "Thursday",
-    "Great Horned Owl" => "Friday",
-    "Red-Tailed Hawk" => "Saturday",
+    "Sunday" => "Sunday",
+    "Monday" => "Monday",
+    "Tuesday" => "Tuesday",
+    "Wednesday" => "Wednesday",
+    "Thursday" => "Thursday",
+    "Friday" => "Friday",
+    "Saturday" => "Saturday",
 );
 
 // switch
@@ -87,6 +87,6 @@ include "includes/header.php" ?>
                     };
                 ?>
             </ul>
-            <p>Raptors content sourced from <a href="https://www.britannica.com/animal/bird-of-prey">Bird of Prey Britannica</a></p>
+
         </div> <!--End listWrapper-->
 <?php include "includes/footer.php" ?>

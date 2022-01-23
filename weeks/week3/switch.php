@@ -36,7 +36,7 @@ switch($today) {
 
     case 'Saturday' :
     $coffee = '<h2>Saturday is our Regular Joe Day!</2>';
-    $pic = 'images/coffee.jpg'; 
+    $pic = 'coffee.png'; 
     $alt = 'Coffee'; 
     $content = 'Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain flowering plants in the Coffea genus. From the coffee fruit, the seeds are separated to produce a stable, raw product: unroasted green coffee. '; 
     break; 
@@ -96,6 +96,7 @@ switch($today) {
         ?>
 
         <img src="images/<?php echo $pic; ?>" alt="<?php echo $alt; ?>">
+       
         <p><?php echo $content;?></p>
 
         <h2>Check out our daily specials</h2>

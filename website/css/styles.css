@@ -6,11 +6,11 @@
 }
 
 body {
-    background: beige;
+    background: whitesmoke;
     /* min-height:100vh; */
 }
 header {
-    background: beige;
+    background: rgb(133, 126, 126);
     overflow:hidden;
 }
 nav {
@@ -125,46 +125,46 @@ aside{
 }
 .Falcon, .Falcon aside, .Falcon main{
     background: #9ACD32;
-    color: #4E691A;
+    color: darkgreen;
 }
 .Falcon a{
-    color: black;
+    color: darkgreen;
 }
 .Osprey, .Osprey aside, .Osprey main{
     background: sandybrown;
     color:beige;
 }
 .Osprey a{
-    color: black;
+    color: beige;
 }
 .Condor, .Condor aside, .Condor main{
     background:rgb(180, 170, 30);
-    color:beige;
+    color:forestgreen;
 }
 .Condor a{
-    color:black;
+    color:forestgreen;
 }
 .Kestrel, .Kestrel aside, .Kestrel main{
-    background: darkviolet;
-    color:beige;
+    background: rgb(165, 149, 165);
+    color:rgb(88, 11, 88);
 }
 .Kestrel a{
-    color: black;
-    text-align: center; ;
+    color: rgb(88, 11, 88);
+    
 }
 .Owl, .Owl aside, .Owl main{
     background: green;
-    color:beige;
+    color:rgb(226, 226, 135);
 }
 .Owl a{
-    color: black;
+    color: rgb(226, 226, 135);
 }
 .Hawk, .Hawk aside, .Hawk main{
-    background: rgb(196, 99, 20);
-    color:beige;
+    background: rgb(209, 111, 31);
+    color:rgb(245, 195, 155);
 }
 .Hawk a{
-    color: Black;
+    color: rgb(245, 195, 155);
 }
 
 
