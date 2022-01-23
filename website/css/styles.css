@@ -96,11 +96,11 @@ aside{
 }
 
 #birdPhoto{
-    width:60%;
-    height:50%;
+    width:100%;
+    height:100%;
     margin:0 auto;
     border: 5px solid beige;
-    border-radius:10%;
+    border-radius:5%;
     clear: both; 
     margin-top: 2px; 
     margin-right: 5px; 
@@ -114,19 +114,20 @@ aside{
     /* max-width:90px;  */
 }
 
-.Bald_Eagle, .Bald_Eagle aside, .Bald_Eagle main {
-    background:rgb(36, 8, 197);
-    color: lightblue; 
+.Eagle, .Eagle aside, .Eagle main {
+    background:lightblue;
+    color: darkblue; 
+    
     
 }
-.Bald_Eagle a{
-    color: lightblue;
+.Eagle a{
+    color: darkblue;
 }
-.Peregrine_Falcon, .Peregrine_Falcon aside, .Peregrine_Falcon main{
+.Falcon, .Falcon aside, .Falcon main{
     background: #9ACD32;
     color: #4E691A;
 }
-.Peregrine_Falcon a{
+.Falcon a{
     color: black;
 }
 .Osprey, .Osprey aside, .Osprey main{
@@ -136,35 +137,36 @@ aside{
 .Osprey a{
     color: black;
 }
-.California_Condor, .California_Condor aside, .California_Condor main{
+.Condor, .Condor aside, .Condor main{
     background:rgb(180, 170, 30);
     color:beige;
 }
-.California_Condor a{
+.Condor a{
     color:black;
 }
-.American_Kestrel, .American_Kestrel aside, .American_Kestrel main{
+.Kestrel, .Kestrel aside, .Kestrel main{
     background: darkviolet;
     color:beige;
 }
-.American_Kestrel a{
+.Kestrel a{
     color: black;
     text-align: center; ;
 }
-.Great_Horned_Owl, .Great_Horned_Owl aside, .Great_Horned_Owl main{
+.Owl, .Owl aside, .Owl main{
     background: green;
     color:beige;
 }
-.Great_Horned_Owl a{
+.Owl a{
     color: black;
 }
-.Red-Tailed_Hawk, .Red-Tailed_Hawk aside, .Red-Tailed_Hawk main{
+.Hawk, .Hawk aside, .Hawk main{
     background: rgb(196, 99, 20);
     color:beige;
 }
-.Red-Tailed_Hawk a{
+.Hawk a{
     color: Black;
 }
+
 
 footer{
     height:2px;
