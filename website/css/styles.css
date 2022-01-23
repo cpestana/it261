@@ -127,28 +127,28 @@ aside{
     color: #4E691A;
 }
 .Peregrine_Falcon a{
-    color: #4E691A;
+    color: black;
 }
 .Osprey, .Osprey aside, .Osprey main{
     background: sandybrown;
     color:beige;
 }
 .Osprey a{
-    color: beige;
+    color: black;
 }
 .California_Condor, .California_Condor aside, .California_Condor main{
     background:rgb(180, 170, 30);
     color:beige;
 }
 .California_Condor a{
-    color:beige;
+    color:black;
 }
 .American_Kestrel, .American_Kestrel aside, .American_Kestrel main{
     background: darkviolet;
     color:beige;
 }
 .American_Kestrel a{
-    color: beige;
+    color: black;
     text-align: center; ;
 }
 .Great_Horned_Owl, .Great_Horned_Owl aside, .Great_Horned_Owl main{
@@ -156,14 +156,14 @@ aside{
     color:beige;
 }
 .Great_Horned_Owl a{
-    color: beige;
+    color: black;
 }
 .Red-Tailed_Hawk, .Red-Tailed_Hawk aside, .Red-Tailed_Hawk main{
     background: rgb(196, 99, 20);
     color:beige;
 }
 .Red-Tailed_Hawk a{
-    color: beige;
+    color: Black;
 }
 
 footer{
@@ -177,11 +177,13 @@ footer{
 footer ul{
     /* float:right; */
     margin:0 auto;
+    color: black; 
 }
 footer li {
     float:left;
     list-style-type:none;
     margin-left:50px;
+    color: black; 
 }
 
 
