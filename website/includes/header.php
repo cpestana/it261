@@ -1,6 +1,6 @@
 <?php
 //we need to define the page that we are on as page
-define('THIS_PAGE', basename($_SERVER['PHP_SELL']));
+define('THIS_PAGE', basename($_SERVER['PHP_SELF']));
 
 switch(THIS_PAGE) {
 case 'index.php'; 
@@ -36,7 +36,7 @@ $nav['gallery.php'] = 'Gallery';
 
         
 
-    <nav>
+    <!-- <nav>
 
     <ul>
             <li><a href="daily.php">Switch</a></li>
@@ -47,8 +47,28 @@ $nav['gallery.php'] = 'Gallery';
             <li><a href="Gallery.php">Gallery</a></li>
          </ul>
 
-    </nav>   
-    </header>
+    </nav>    -->
+
+    <nav>
+<ul>
+    <?php
+    foreach($nav as $key => $value) {
+        if(THIS_PAGE == $key) {
+    echo '<li><a class="current" href="'.$key.'"> '.$value.'</a>
+    </l>'; 
+    } else {
+        echo '<li><a class="" href="'.$key.'"> '.$value.'</a>
+        </l>'; 
+    }
+} //edn for each 
+    ?>
+    </ul>
+    </nav>
+
+
+
+
+</header>
     
 <body class="<?php echo $body  ;?>">
 

@@ -2,7 +2,7 @@
 //arrays remind me of a category, a category of fruits, names, 
 //navigation
 
-
+define('THIS_PAGE', basename($SERVER['PHP_SELF']));
 
 $fruits = array(
     'bananas', 
@@ -77,12 +77,31 @@ echo '<a href="'.$key.'"> Visual '.$value.'</a> <br>';
 
 ?>
 
+<html>
+<head>
+<style>
+.current {
+    color:red; 
+}
+</style>
+</head>
+<body>
+
+</body>
     <nav>
 <ul>
     <?php
     foreach($nav as $key => $value) {
-    echo '<li style="list-style-type:non;"><a style="text-decoration:none; color:blue;" href="'.$key.'"> '.$value.'</a></l>'; 
+        if(THIS_PAGE == $key) {
+    echo '<li><a class="current" href="'.$key.'"> '.$value.'</a>
+    </l>'; 
+    } else {
+        echo '<li><a class="" href="'.$key.'"> '.$value.'</a>
+        </l>'; 
     }
+} //edn for each 
     ?>
     </ul>
     </nav>
+</body>
+</html>
