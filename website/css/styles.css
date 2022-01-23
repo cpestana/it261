@@ -132,10 +132,10 @@ aside{
 }
 .Osprey, .Osprey aside, .Osprey main{
     background: sandybrown;
-    color:beige;
+    color:rgb(71, 44, 10);
 }
 .Osprey a{
-    color: beige;
+    color: rgb(71, 44, 10);
 }
 .Condor, .Condor aside, .Condor main{
     background:rgb(180, 170, 30);
