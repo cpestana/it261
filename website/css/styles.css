@@ -136,6 +136,7 @@ aside{
 .Condor, .Condor aside, .Condor main{
     background:rgb(180, 170, 30);
     color:forestgreen;
+    clear: both; 
 }
 .Condor a{
     color:forestgreen;
