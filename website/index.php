@@ -19,44 +19,30 @@
 
 <div id="hero">
     
-    <div id="h1-header">
-    <h1>Christine's IT 261 Portal</h1>
-    
-    </div> <!--end h1-header-->
-
-    <div id="images">
-        <img src="images/Me.jpg" alt="picforsite" width="250" height="300"/>
-    </div><!--end images-->
-
-    <div id="paragraph-header">
-    <p>Hello! I started Seattle Central College in 2020 and I am looking forward to getting my degree in Web Development. I am getting comfortable using HTML, CSS, SQL, and Python, but I still have a lot to learn. I am excited to learn more about PHP and JavaScript. <br>
-        I was working as a case manager for 4 years but, a couple of years ago, I decided I was ready to make a change in my life and take on a new challenge. I became interested in web development and database administration when assisting my organization with developing their database. </p>
-    </div> <!--end paragraph-header-->
 
       
 
 </div><!--end hero-->
 
 <main>
+<div id="h1-header">
+    <h1>Welcome to my Home Page</h1>
+    
+    </div> <!--end h1-header-->
 
-    <div id = "mamppages">
-<img src="images/mamppage.jpg" alt="mamppage" width="500" height="375"/>
-<img src="images/errorpage.jpg" alt="mamppage2" width="500" height="375"/>
 
-    </div><!--end mamppages-->
+
+    <div id="paragraph-header">
+    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32..</p>
+    </div> <!--end paragraph-header-->
+
 
 </main>
 
 <aside>
    
-    <h3>Weekly Exercises</h3>
-    <h4>Week 2</h4>
-        <ul>
-        <li><a href="weeks/week2/var.php">Var.php</a></li>
-        <li><a href="weeks/week2/currency-logic.php">Currency-Logic.php.php</a></li>
-        <li><a href="weeks/week2/currency.php">Currency.php</a></li>
-        <li><a href="weeks/week2/heredoc.php">Heredoc.php</a></li>
-        </ul>
+    <h3>This is the aside area.</h3>
+    
   
 </aside>
 </div> <!---end wrapper-->
