@@ -14,7 +14,9 @@
    
      <div id="inner-header">
      <a href="index.php">
-     <img src="images/php.jpg" alt="logo" width="75" height="75"/>
+         <div id="logoimg">
+     <img src="images/php_logo.png" alt="logo" width="75" height="75"/>
+        </div> <!--end logoimg-->
      </a>
          </div> <!--end inner-header-->
    

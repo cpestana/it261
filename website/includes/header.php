@@ -31,7 +31,6 @@ $nav['gallery.php'] = 'Gallery';
     <link href="css/styles.css" type="text/css" rel="stylesheet">
 </head>
 <header>
-   
 
 
         

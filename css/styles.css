@@ -18,11 +18,14 @@ header {
     /* height: 200px; */
     background:#D4AF37; 
     overflow:hidden; 
-    padding: 2px;
+    padding: 2px; 
     
     
 }
 
+#logoimg {
+    margin-left: 10px; 
+}
 
 
 #inner-header {
