@@ -61,7 +61,7 @@ echo '<p class="error">Please fill out the fields!</p>';
     </p>
 
     </div>
-    '; 
+    ';
 
 
 } //end else
