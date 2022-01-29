@@ -24,7 +24,7 @@
 <label>Comments</label>
 <textarea name="commnets"></textarea>
 
-<input type="Submit" value="Confirm">
+<input type="submit" value="confirm">
 
 </form>
 
