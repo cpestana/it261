@@ -6,7 +6,7 @@
 if(isset($_POST['first_name'], 
         $_POST['last_name'],
         $_POST['email'],
-        $_POST['comments'])) {   
+        $_POST['comments'])){   
 
 $first_name = $_POST['first_name']; 
 $last_name =  $_POST['last_name']; 
@@ -16,8 +16,8 @@ $comments =  $_POST['comments'];
 if(empty($_POST['first_name'] &&
         $_POST['last_name'] &&   
         $_POST['email'] && 
-        $_POST['comments'] )) {
-
+        $_POST['comments'])){               
+                
 echo 'Please fill out the fields!'; 
 
 } else {
@@ -29,7 +29,6 @@ echo $email;
 echo '<br>';
 echo $comments; 
 echo '<br>';
-
 }
 
 } else {
@@ -52,12 +51,7 @@ echo '<br>';
     
     </form>
 
-    <p><a href="">Reset</a></p>
-
     '; 
 
 
  }   //end else
-
-
-?>

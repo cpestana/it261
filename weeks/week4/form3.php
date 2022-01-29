@@ -22,7 +22,7 @@
 <input type="email" name="email">
 
 <label>Comments</label>
-<textarea name="commnets"></textarea>
+<textarea name="comments"></textarea>
 
 <input type="submit" value="confirm">
 
@@ -37,7 +37,11 @@
 if(isset($_POST['first_name'], 
         $_POST['last_name'],
         $_POST['email'],
-        $_POST['comments'] )) {
+        $_POST['comments'])){
+            $first_name = $_POST['first_name']; 
+            $last_name = $_POST['last_name']; 
+            $email = $_POST['email']; 
+            $comments = $_POST['comments']; 
 
 if(empty($_POST['first_name'] && 
     $_POST['last_name'] &&
@@ -47,11 +51,6 @@ if(empty($_POST['first_name'] &&
 echo '<p class="error">Please fill out the fields!</p>'; 
 
 } else {
-
-    $first_name = $_POST['first_name']; 
-    $last_name = $_POST['last_name']; 
-    $email = $_POST['email']; 
-    $comments = $_POST['comments']; 
 
     echo '
     <div class="box">
