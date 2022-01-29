@@ -13,9 +13,25 @@ form {
     padding: 10px; 
 }
 
+.celcius form{
+    border:none; 
+    padding:0; 
+}
+
+.celcius fieldset {
+    border:1px solid; 
+    padding:10px; 
+}
+
 label {
     display: block; 
     margin-bottom: 5px; 
+}
+
+input {
+    margin-bottom:10px; 
+    display:block; 
+    height:30px;
 }
 
 textarea{
@@ -24,12 +40,21 @@ textarea{
 
 }
 
+legend{
+    font-size:1.3em; 
+    font-style: italic; 
+}
+
+
 p {
 text-align:center; 
 
 }
 
-.error {
+h2{
+    text-align:center;
+}
+.error, .hot {
     color:red; 
     font-style: italic;
 }
