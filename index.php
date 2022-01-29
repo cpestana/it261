@@ -92,6 +92,14 @@
         <li><a href="weeks/week3/for-loop.php">For-Loop.php</a></li>
         <li><a href="weeks/week3/switch.php">Switch.php</a></li>
         </ul>
+        <h4>Week 4</h4>
+        <ul>
+        <li><a href="weeks/week4/form-get.php">Form-Get.php</a></li>
+        <li><a href="weeks/week4/form1.php">Form1.php</a></li>
+        <li><a href="weeks/week4/form2.php">Form2.php</a></li>
+        <li><a href="weeks/week4/form3.php">Form3.php</a></li>
+        <li><a href="weeks/week4/celcius.php">Celcius.php</a></li>
+        </ul>
     </aside>
 
     </div> <!---end wrapper-->

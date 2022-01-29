@@ -101,20 +101,18 @@ aside{
     margin-top: 2px; 
     margin-right: 5px; 
 }
+
 #image{
     clear:both;
     margin:0 auto;
     border-radius:0%;
     overflow:hidden;
     
-  
 }
-
 .Eagle, .Eagle aside, .Eagle main {
     background:lightblue;
     color: darkblue; 
-    
-    
+      
 }
 .Eagle a{
     color: darkblue;
