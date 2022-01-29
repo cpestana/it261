@@ -44,7 +44,7 @@ if(empty($_POST['first_name'] &&
     $_POST['email'] &&
     $_POST['comments'] )) {
 
-echo '<p class="error>Please fill out the fields!</p>'; 
+echo '<p class="error">Please fill out the fields!</p>'; 
 
 } else {
 
