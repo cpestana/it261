@@ -112,7 +112,7 @@ aside{
 .Eagle, .Eagle aside, .Eagle main {
     background:lightblue;
     color: darkblue; 
-      
+    margin-right:10px; 
 }
 .Eagle a{
     color: darkblue;
@@ -120,6 +120,7 @@ aside{
 .Falcon, .Falcon aside, .Falcon main{
     background: #9ACD32;
     color: darkgreen;
+    margin-right:10px; 
 }
 .Falcon a{
     color: darkgreen;
@@ -127,6 +128,7 @@ aside{
 .Osprey, .Osprey aside, .Osprey main{
     background: sandybrown;
     color:rgb(71, 44, 10);
+    margin-right:10px; 
 }
 .Osprey a{
     color: rgb(71, 44, 10);
@@ -135,6 +137,7 @@ aside{
     background:rgb(180, 170, 30);
     color:forestgreen;
     clear: both; 
+    margin-right:10px; 
 }
 .Condor a{
     color:forestgreen;
@@ -142,6 +145,7 @@ aside{
 .Kestrel, .Kestrel aside, .Kestrel main{
     background: rgb(165, 149, 165);
     color:rgb(88, 11, 88);
+    margin-right:10px; 
 }
 .Kestrel a{
     color: rgb(88, 11, 88);
@@ -150,6 +154,7 @@ aside{
 .Owl, .Owl aside, .Owl main{
     background: green;
     color:rgb(226, 226, 135);
+    margin-right:10px; 
 }
 .Owl a{
     color: rgb(226, 226, 135);
@@ -157,6 +162,7 @@ aside{
 .Hawk, .Hawk aside, .Hawk main{
     background: rgb(209, 111, 31);
     color:rgb(245, 195, 155);
+    margin-right:10px; 
 }
 .Hawk a{
     color: rgb(245, 195, 155);
