@@ -25,7 +25,7 @@
             <ul>
             <li><a href="website/daily.php">Switch</a></li>
             <li><a href="adder.php">Troubleshoot</a></li>
-            <li><a href="Calculator.php">Calculator</a></li>
+            <li><a href="calculator.php">Calculator</a></li>
             <li><a href="Email.php">Email</a></li>
             <li><a href="Database.php">Database</a></li>
             <li><a href="Gallery.php">Gallery</a></li>
@@ -100,6 +100,10 @@
         <li><a href="weeks/week4/form3.php">Form3.php</a></li>
         <li><a href="weeks/week4/celcius.php">Celcius.php</a></li>
         </ul>
+        <h4>Week 5</h4>
+        <li><a href="weeks/week5/currency1.php">Curreny1.php</a></li>
+        <li><a href="weeks/week5/currency2.php">Curreny2.php</a></li>
+        <li><a href="weeks/week5/null.php">Null.php.php</a></li>
     </aside>
 
     </div> <!---end wrapper-->
