@@ -41,7 +41,7 @@
                     <option value="35" <?php if(isset($_POST['mpg']) && $_POST['mpg'] == '35') echo 'selected="selected"';?>>Great! @ 35 mpg</option>
                 </select>
 
-                <input type="submit" value="Calculate">
+                <button><input type="submit" value="Calculate"></button>
 
                 <button><p><a href="">Reset</a></p></button>
 
