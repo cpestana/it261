@@ -43,6 +43,8 @@
 
                 <input type="submit" value="Calculate">
 
+                <button><p><a href="">Reset</a></p></button>
+
             </fieldset> 
         </form>
         <?php

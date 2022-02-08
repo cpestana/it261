@@ -87,3 +87,11 @@ footer li{
     padding: 5px; 
    
 }
+
+button {
+    padding: 6px; 
+    background:tan; 
+    text-align: center; 
+    margin: 20px auto; 
+    display: block; 
+}
