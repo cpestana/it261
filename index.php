@@ -26,7 +26,7 @@
             <li><a href="website/daily.php">Switch</a></li>
             <li><a href="adder.php">Troubleshoot</a></li>
             <li><a href="calculator.php">Calculator</a></li>
-            <li><a href="Email.php">Email</a></li>
+            <li><a href="website/contact.php">Contact</a></li>
             <li><a href="Database.php">Database</a></li>
             <li><a href="Gallery.php">Gallery</a></li>
             </ul>
@@ -104,6 +104,8 @@
         <li><a href="weeks/week5/currency1.php">Curreny1.php</a></li>
         <li><a href="weeks/week5/currency2.php">Curreny2.php</a></li>
         <li><a href="weeks/week5/null.php">Null.php</a></li>
+        <h4>Week 6</h4>
+        <li><a href="weeks/week6/form.php">Form.php</a></li>
     </aside>
 
     </div> <!---end wrapper-->
@@ -118,6 +120,7 @@
                 <li><a href="../index.php">Web Design by Christine</a></li>
                 <li><a href="https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fchristine-it-261-portal.herokuapp.com%2F">HTML</a></li>
                 <li><a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fchristine-it-261-portal.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">CSS</a></li>
+                <li><a href="https://github.com/cpestana/it261/">Github</a></li>
             </ul>
         </div> <!--end inner-footer-->
     </footer>
