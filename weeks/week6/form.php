@@ -165,7 +165,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </span>
 
             <label for="phone">Phone</label>
-            <input type="text" name="phone" placeholder="xxx-xxx-xxxx" value="<?php if (isset($_POST['phone'])) {
+            <input type="text" name="phone" value="<?php if (isset($_POST['phone'])) {
     echo htmlspecialchars($_POST['phone']);
 
 }
