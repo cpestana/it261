@@ -90,7 +90,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $_POST['last_name'],
         $_POST['email'],
         $_POST['gender'],
-        $_POST['wines'],
         $_POST['regions'],
         $_POST['comments'],
         $_POST['phone'],
@@ -103,7 +102,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         First Name: ' . $first_name . '' . PHP_EOL . '
         last Name: ' . $last_name . '' . PHP_EOL . '
         Gender: ' . $gender . '' . PHP_EOL . '
-        Wines: ' . my_wines() . '' . PHP_EOL . '
         Region: ' . $regions . '' . PHP_EOL . '
         Phone: ' . $phone . '' . PHP_EOL . '
         Email: ' . $email . '' . PHP_EOL . '
@@ -114,6 +112,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         header('Location: thx.php');
 
     } //close isset
+
 } // End Server method
 
 ?>
@@ -271,13 +270,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </fieldset>
     </form>
 
-
-
-
-
-
-
-    
 
 </body>
 
