@@ -1,7 +1,15 @@
 <?php
+ob_start();
 
-
-
+$first_name = '';
+$last_name = '';
+$email = '';
+$gender = '';
+$wines = '';
+$phone = '';
+$regions = '';
+$comments = '';
+$privacy = '';
 
 $first_name_err = '';
 $last_name_err = '';
@@ -98,11 +106,26 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         Region: ' . $regions . '' . PHP_EOL . '
         Phone: ' . $phone . '' . PHP_EOL . '
         Email: ' . $email . '' . PHP_EOL . '
+        Wines: ' . my_wines($wines) . '' . PHP_EOL . '
         Comments: ' . $comments . '' . PHP_EOL . '
         ';
+
+        if(!empty($first_name &&
+                 $last_name &&
+                 $email &&
+                 $gender &&
+                 $wines &&
+                 $regions &&
+                 $comments &&
+                 $phone &&
+                 $privacy )) {
+
+       
        
         mail($to, $subject, $body, $headers);
         header('Location: thx.php');
+
+    } // close if not empty statement
 
     } //close isset
 
@@ -168,30 +191,28 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <?php echo $phone_err; ?>
             </span>
 
-
-<label for="gender">Gender</label>
+            <label for="gender">Gender</label>
     
-   <li><input type="radio" name="gender" value="female" <?php if (isset($_POST['gender']) && $_POST['gender'] == 'female') {
-    echo 'checked="checked"';
-}
-?>> Female</li>
-
-   <li><input type="radio" name="gender" value="male" <?php if (isset($_POST['gender']) && $_POST['gender'] == 'male') {
-    echo 'checked="checked"';
-}
-?>> Male</li>
-
-            
-    <li><input type="radio" name="gender" value="neither" <?php if (isset($_POST['gender']) && $_POST['gender'] == 'neither') {
-    echo 'checked="checked"';
-}
-?>> Neither</li>
-   
-            
-            <span class="error">
-                <?php echo $gender_err; ?>
-            </span>
-
+    <li><input type="radio" name="gender" value="female" <?php if (isset($_POST['gender']) && $_POST['gender'] == 'female') {
+     echo 'checked="checked"';
+ }
+ ?>> Female</li>
+ 
+    <li><input type="radio" name="gender" value="male" <?php if (isset($_POST['gender']) && $_POST['gender'] == 'male') {
+     echo 'checked="checked"';
+ }
+ ?>> Male</li>
+ 
+             
+     <li><input type="radio" name="gender" value="neither" <?php if (isset($_POST['gender']) && $_POST['gender'] == 'neither') {
+     echo 'checked="checked"';
+ }
+ ?>> Neither</li>
+    
+             
+             <span class="error">
+                 <?php echo $gender_err; ?>
+             </span>
 
  <label for="wines">Favorite Wines</label>
 
@@ -246,15 +267,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <?php echo $regions_err; ?>
                 </span>
 
-  <label>Comments</label>
-        <textarea name="comments"><?php if(isset($_POST['comments'])) echo htmlspecialchars($_POST['comments']) ;?></textarea>
-        <span class="error">
-            <?php echo $comments_err; ?>
-        </span>
+<label>Comments</label>
+                <textarea
+                    name="comments"><?php if (isset($_POST['comments'])) {echo htmlspecialchars($_POST['comments']) ;}?></textarea>
+                <span class="error">
+                    <?php echo $comments_err; ?>
+                </span>
 
-<label for="privacy">Privacy</label>
-    <ul>
-    <li><input type="radio" name="privacy" value="agree" <?php if (isset($_POST['privacy']) && $_POST['privacy'] == 'agree') {
+                <label for="privacy">Privacy</label>
+                <ul>
+                    <li><input type="radio" name="privacy" value="agree" <?php if (isset($_POST['privacy']) && $_POST['privacy'] == 'agree') {
     echo 'checked="checked"';
 }
 ?>>You must agree</li>
