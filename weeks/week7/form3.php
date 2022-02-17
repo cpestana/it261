@@ -22,7 +22,7 @@ $phone_err = '';
 $privacy_err = '';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-
+    
     if (empty($_POST['first_name'])) {
         $first_name_err = 'Please fill out your First Name.';
     } else {
@@ -65,11 +65,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $comments = $_POST['comments'];
     }
 
-    if (empty($_POST['phone'])) {
-        $phone_err = 'Please enter your phone number!';
-    } else {
-        $phone = $_POST['phone'];
-    }
+   // if (empty($_POST['phone'])) {
+    //    $phone_err = 'Please enter your phone number!';
+   // } else {
+   //     $phone = $_POST['phone'];
+  //  }
+
+  if(empty($_POST['phone'])) { // if empty, type in your number
+    $phone_err = 'Your phone number please!';
+    } elseif(array_key_exists('phone', $_POST)){
+    if(!preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone']))
+    { // if you are not typing the requested format of xxx-xxx-xxxx, display Invalid format
+    $phone_err = 'Invalid format!';
+    } else{
+    $phone = $_POST['phone'];
+    } // end else
+    } // end main if
 
     if (empty($_POST['privacy'])) {
         $privacy_err = 'Cannot pass go!';
@@ -122,11 +133,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                  $regions &&
                  $comments &&
                  $phone &&
-                 $privacy )) { 
+                 $privacy) && 
+                 preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', 
+                 $_POST['phone'])){
 
        $headers = array(
            'From' => 'noreply@gmail.com', 
-           'Reply-To:' => ''.$email.'', 
+           'Reply to:' => ''.$email.'', 
        ); 
        
         mail($to, $subject, $body, $headers);
@@ -136,7 +149,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     } //close isset
 
- } // End Server method */
+} // End Server method
 
 ?>
 
@@ -188,7 +201,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </span>
 
             <label for="phone">Phone</label>
-            <input type="text" name="phone" value="<?php if (isset($_POST['phone'])) {
+            <input type="text" name="phone" placeholder="xxx-xxx-xxxx" value="<?php if (isset($_POST['phone'])) {
     echo htmlspecialchars($_POST['phone']);
 
 }
