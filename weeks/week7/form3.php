@@ -125,28 +125,24 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         Comments: ' . $comments . '' . PHP_EOL . '
         ';
 
-        if(!empty($first_name &&
-                 $last_name &&
-                 $email &&
-                 $gender &&
-                 $wines &&
-                 $regions &&
-                 $comments &&
-                 $phone &&
-                 $privacy) && 
-                 preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', 
-                 $_POST['phone'])){
+    if(!empty($first_name &&
+            $last_name &&
+            $email &&
+            $gender &&
+            $wines &&
+            $regions &&
+            $comments &&
+            $phone &&
+            $privacy) && 
+            preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', 
+            $_POST['phone'])){
 
-       $headers = array(
-           'From' => 'noreply@gmail.com', 
-           'Reply to:' => ''.$email.'', 
-       ); 
-       
+
         mail($to, $subject, $body, $headers);
         header('Location: thx.php');
-
+             
     } // close if not empty statement
-
+             
     } //close isset
 
 } // End Server method

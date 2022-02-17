@@ -124,10 +124,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                  $phone &&
                  $privacy )) { 
 
-       $headers = array(
-           'From' => 'noreply@gmail.com', 
-           'Reply-To:' => ''.$email.'', 
-       ); 
+    
        
         mail($to, $subject, $body, $headers);
         header('Location: thx.php');
