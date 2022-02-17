@@ -76,11 +76,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $privacy = $_POST['privacy'];
     }
 
-    function my_wines()
+    // our wines function 
+    function my_wines($wines)
     {
         $my_return = '';
         if (!empty($_POST['wines'])) {
             $my_return = implode(', ', $_POST['wines']);
+        } else {
+            $wines_err = 'Please check your wines'; 
         }
         return $my_return;
     }
@@ -94,7 +97,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $_POST['regions'],
         $_POST['comments'],
         $_POST['phone'],
-        $_POST['privacy'],
+        $_POST['privacy']
     )) {
 
         $to = 'clpestanaa@gmail.com';
@@ -120,7 +123,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                  $phone &&
                  $privacy )) {
 
-       
+       $headers = array(
+           'From' => 'noreply@gmail.com', 
+           'Reply to:' => ''.$email.'', 
+       ); 
        
         mail($to, $subject, $body, $headers);
         header('Location: thx.php');
