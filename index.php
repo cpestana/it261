@@ -101,13 +101,22 @@
         <li><a href="weeks/week4/celcius.php">Celcius.php</a></li>
         </ul>
         <h4>Week 5</h4>
+        <ul>
         <li><a href="weeks/week5/currency1.php">Curreny1.php</a></li>
         <li><a href="weeks/week5/currency2.php">Curreny2.php</a></li>
         <li><a href="weeks/week5/null.php">Null.php</a></li>
+        </ul>
         <h4>Week 6</h4>
+        <ul>
         <li><a href="weeks/week6/form.php">Form.php</a></li>
         <li><a href="weeks/week6/form2.php">Form2.php</a></li>
         <li><a href="weeks/week6/functions.php">Functions.php</a></li>
+        <li><a href="weeks/week6/thanx.php">Thanx.php</a></li>
+        </ul>
+        <h4>Week 7</h4>
+        <ul>
+        </ul>
+
     </aside>
 
     </div> <!---end wrapper-->

@@ -36,7 +36,6 @@ $nav['gallery.php'] = 'Gallery';
         
 
     <!-- <nav>
-
     <ul>
             <li><a href="daily.php">Switch</a></li>
             <li><a href="Troubleshoot.php">Troubleshoot</a></li>
@@ -45,7 +44,6 @@ $nav['gallery.php'] = 'Gallery';
             <li><a href="Database.php">Database</a></li>
             <li><a href="Gallery.php">Gallery</a></li>
          </ul>
-
     </nav>    -->
 
     <nav>
