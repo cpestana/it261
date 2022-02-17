@@ -114,7 +114,7 @@
         <li><a href="weeks/week6/thanx.php">Thanx.php</a></li>
         </ul>
         <h4>Week 7</h4>
-        <li><a href="weeks/week7/form3.php.php">Form3.php</a></li>
+        <li><a href="weeks/week7/form3.php">Form3.php</a></li>
         <li><a href="weeks/week7/random.php">Random.php</a></li>
         <ul>
         </ul>
