@@ -110,7 +110,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $_POST['privacy']
     )) {
 
-        $to = 'christine.pestana@seattlecolleges.com';
+        $to = 'clpestanaa@gmail.com';
         $subject = 'Test Email,' . date('m/d/y, h i A');
         $body = '
         First Name: ' .$first_name. '' . PHP_EOL . '
