@@ -22,6 +22,7 @@ $climate_err = '';
 $comments_err = '';
 $privacy_err = '';
 
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if (empty($_POST['first_name'])) {
@@ -111,7 +112,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     )) {
 
         $to = 'clpestanaa@gmail.com';
-        $subject = 'Test Email,' . date('m/d/y, h i A');
+        $subject = 'We\'ve got the plants you\'re looking for, '.$first_name.'';
         $body = '
         First Name: ' .$first_name. '' . PHP_EOL . '
         last Name: ' .$last_name. '' . PHP_EOL . '
@@ -123,6 +124,20 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         Comments: ' .$comments. '' . PHP_EOL . '
         ';
 
+        if(!empty($first_name &&
+        $last_name &&
+        $email &&
+        $phone &&
+        $pot_size &&
+        $plant &&
+        $climate &&
+        $comments &&
+        $privacy) && 
+        preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', 
+        $_POST['phone'])){
+
+     } // End Server method */
+
         $headers = array(
             'From' => 'noreply@christinepestana.com', 
             'Reply-to' => ''.$email.''
@@ -131,23 +146,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         mail($to, $subject, $body, $headers);
         header('Location: thanx.php');
 
-       // if(!empty($first_name &&
-           //      $last_name &&
-           //      $email &&
-            //     $phone &&
-            //     $pot_size &&
-            //     $plant &&
-             //    $climate &&
-               //  $comments &&
-             //    $privacy) && 
-             //    preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', 
-             //    $_POST['phone'])){
-
     } // close if not empty statement
 
     } //close isset
 
- //} // End Server method */
+
 
 ?>
 
@@ -170,7 +173,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <input type="text" name="first_name" value="<?php if(isset($_POST['first_name'])) echo htmlspecialchars($_POST['first_name']); ?>">
                     <span class="error"><?php echo $first_name_err; ?></span>
 
-                    <label for="last_name">Last Name:</label>
+                    <labsel for="last_name">Last Name:</label>
                     <input type="text" name="last_name" value="<?php if(isset($_POST['last_name'])) echo htmlspecialchars($_POST['last_name']); ?>">
                     <span class="error"><?php echo $last_name_err; ?></span>
 
@@ -178,13 +181,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <input type="text" name="email" value="<?php if(isset($_POST['email'])) echo htmlspecialchars($_POST['email']); ?>">
                     <span class="error"><?php echo $email_err; ?></span>
 
-                    <label for="phone">Phone</label>
-                   <input type="text" name="phone" placeholder="xxx-xxx-xxxx" value="<?php if(isset($_POST['phone'])) {
-                    echo htmlspecialchars($_POST['phone']);
-                    } ?>">
-                  <span class="error">
-                    <?php echo $phone_err; ?>
-                 </span>
+                 <label for="phone">Phone</label>
+                 <input type="text" name="phone" placeholder="xxx-xxx-xxxx" value="<?php if (isset($_POST['phone'])) {
+                 echo htmlspecialchars($_POST['phone']);
+                 }
+
+                ?>">
+                <span class="error">
+                <?php echo $phone_err; ?>
+               </span>
 
                     <label for="plant">Favorite Plant (Choose one):</label>
                     <ul>
