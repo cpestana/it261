@@ -57,6 +57,7 @@ nav a.current{
     max-width:1100px;
     margin:0 auto;
     min-height:70%;
+    background-color: ghostwhite;
 }
 
 main{

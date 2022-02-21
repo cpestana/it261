@@ -12,17 +12,37 @@
     <?php
     include('config.php');
     include('includes/header.php');
+    
     ?>
 
  
 
 <div id="wrapper">
 
+
 <div id="hero">
-    
+    <?php
+$photos[0] = 'photo1'; 
+$photos[1] = 'photo2';
+$photos[2] = 'photo3';
+$photos[3] = 'photo4';
+$photos[4] = 'photo5';
 
-      
+$i = rand(0, 4); 
 
+$selected_image = ''.$photos[$i].'.jpg'; 
+echo '<img src=".images'.$selected_image.'" alt=" '.$photos[$i].' ">';
+
+function random_images($photos) {
+$my_return = ''; 
+$i = rand(0, 4); 
+$selected_image = ''.$photos[$i].'.jpg';
+$my_return = '<img src=".images'.$selected_image.'" alt=" '.$photos[$i].' ">';
+return $my_return; 
+}
+
+echo random_images($photos); 
+?>
 </div><!--end hero-->
 
 <main>
