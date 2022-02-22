@@ -1,5 +1,5 @@
 <?php
-
+ob_start();
 
 
 $first_name = '';
@@ -130,12 +130,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $subject = 'We\'ve got the plants you\'re looking for, '.$first_name.'';
         $body = '
         First Name: ' .$first_name. '' . PHP_EOL . '
-        last Name: ' .$last_name. '' . PHP_EOL . '
-        pot_size: ' .$pot_size. '' . PHP_EOL . '
-        climate: ' .climate($climate). '' . PHP_EOL . '
+        Last Name: ' .$last_name. '' . PHP_EOL . '
+        Pot_size: ' .$pot_size. '' . PHP_EOL . '
+        Climate: ' .climate($climate). '' . PHP_EOL . '
         Phone: ' .$phone. '' . PHP_EOL . '
         Email: ' .$email. '' . PHP_EOL . '
-        plant: ' .$plant. '' . PHP_EOL . '
+        Plant: ' .$plant. '' . PHP_EOL . '
         Comments: ' .$comments. '' . PHP_EOL . '
         ';
 
@@ -158,12 +158,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             'Reply-to' => ''.$email.''
              );
 
-        mail($to, $subject, $body);
+        mail($to, $subject, $body, $headers);
         header('Location: thanx.php');
 
     } // close if not empty statement
 
-    } //close isset
+ } //close isset
 
 
 
