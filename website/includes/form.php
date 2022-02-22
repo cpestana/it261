@@ -150,14 +150,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         //$privacy) && 
         //preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', 
         //$_POST['phone'])){
-     //} // End Server method */
+     //} // End Server method 
+          
 
-        $headers = array(
-            'From' => 'noreply@christinepestana.com', 
-            'Reply-to' => ''.$email.''
-        );
+       // $headers = array(
+        //    'From' => 'noreply@christinepestana.com', 
+        //    'Reply-to' => ''.$email.''
+        //);
 
-        mail($to, $subject, $body, $headers);
+        mail($to, $subject, $body);
         header('Location: thanx.php');
 
     } // close if not empty statement
@@ -195,8 +196,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <input type="text" name="email" value="<?php if(isset($_POST['email'])) echo htmlspecialchars($_POST['email']); ?>">
                     <span class="error"><?php echo $email_err; ?></span>
 
-
-               <label for="phone">Phone Number</label>
+                    <label for="phone">Phone Number</label>
                     <input type="tel" placeholder="xxx-xxx-xxxx" name="phone" value="<?php echo $sticky_phone;?>">
                     <span class="error"><?php echo $phone_err;?></span>
 
