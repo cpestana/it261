@@ -5,12 +5,9 @@
     box-sizing: border-box;
 }
 
-body {
-    background: whitesmoke;
-    
-}
+
 header {
-    background: rgb(133, 126, 126);
+    background: silver;
     overflow:hidden;
 }
 nav {
@@ -57,17 +54,21 @@ nav a.current{
     max-width:1100px;
     margin:0 auto;
     min-height:70%;
-    background-color: ghostwhite;
+  
 }
 
+
 main{
-    width:62%;
-    background: lightblue;
+    width:50%;
+    background: thistle;
     float: left;
     padding:30px;
     font-size:120%;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
+    margin-top: 10px; 
+    margin-left: 10px;
 }
+
 main p{
     padding:6px;
 }
@@ -86,10 +87,10 @@ main li{
     margin:0 20px 20px 20px;
 }
 aside{
-    width:37%;
+    width:50%;
     background: white;
     float:right;
-    margin-left: 10px; 
+    margin-left: 20px; 
 }
 
 #birdPhoto{
@@ -204,7 +205,7 @@ aside p{
 form {
     width: 400px; 
     margin: 20px auto; 
-
+    background-color: thistle;
 }
 
 fieldset {
@@ -271,4 +272,16 @@ textarea{
 
 #hero_index{
     display: block; 
+}
+
+h3 {
+    text-align: center; 
+}
+
+h1 {
+    text-align: center; 
+}
+
+#contact_main{
+   background-color: whitesmoke;
 }
