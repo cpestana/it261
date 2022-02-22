@@ -1,5 +1,5 @@
 <?php
-ob_start();
+
 
 
 $first_name = '';
@@ -21,7 +21,7 @@ $pot_size_err = '';
 $climate_err = ''; 
 $comments_err = '';
 $privacy_err = '';
-
+$sticky_phone = '';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
@@ -48,7 +48,21 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     //} else {
      //   $phone = $_POST['phone'];
     //}
-    if(empty($_POST['phone'])) { // if empty, type in your number
+
+    if(empty($_POST['phone'])) {  // if empty, type in your number
+        $phone_err = 'Please enter your phone number';
+    }elseif(array_key_exists('phone', $_POST)){
+        if(!preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone'])){
+            $phone_err = 'Invalid format. Enter in format xxx-xxx-xxxx';
+            $sticky_phone = $_POST['phone'];
+            unset($_POST['phone']);
+        }else{
+        $phone = $_POST['phone'];
+        $sticky_phone = $_POST['phone'];
+        }
+    }
+
+    /* if(empty($_POST['phone'])) { // if empty, type in your number
         $phone_err = 'Your phone number please!';
         } elseif(array_key_exists('phone', $_POST)){
         if(!preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone']))
@@ -57,7 +71,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         } else{
         $phone = $_POST['phone'];
         } // end else
-        } // end main if
+        } // end main if */
 
     if (empty($_POST['plant'])) {
         $plant_err = 'Please let us know what plant you are looking for!';
@@ -100,6 +114,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
     //end of function
    
+    //begin email send 
     if (isset(
         $_POST['first_name'],
         $_POST['last_name'],
@@ -124,19 +139,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         Comments: ' .$comments. '' . PHP_EOL . '
         ';
 
-        if(!empty($first_name &&
-        $last_name &&
-        $email &&
-        $phone &&
-        $pot_size &&
-        $plant &&
-        $climate &&
-        $comments &&
-        $privacy) && 
-        preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', 
-        $_POST['phone'])){
-
-     } // End Server method */
+        //if(!empty($first_name &&
+        //$last_name &&
+        //$email &&
+        //$phone &&
+        //$pot_size &&
+        //$plant &&
+        //$climate &&
+        //$comments &&
+        //$privacy) && 
+        //preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', 
+        //$_POST['phone'])){
+     //} // End Server method */
 
         $headers = array(
             'From' => 'noreply@christinepestana.com', 
@@ -173,7 +187,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <input type="text" name="first_name" value="<?php if(isset($_POST['first_name'])) echo htmlspecialchars($_POST['first_name']); ?>">
                     <span class="error"><?php echo $first_name_err; ?></span>
 
-                    <labsel for="last_name">Last Name:</label>
+                    <labsel for="last_name"><b>Last Name:</b></label>
                     <input type="text" name="last_name" value="<?php if(isset($_POST['last_name'])) echo htmlspecialchars($_POST['last_name']); ?>">
                     <span class="error"><?php echo $last_name_err; ?></span>
 
@@ -181,15 +195,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <input type="text" name="email" value="<?php if(isset($_POST['email'])) echo htmlspecialchars($_POST['email']); ?>">
                     <span class="error"><?php echo $email_err; ?></span>
 
-                 <label for="phone">Phone</label>
-                 <input type="text" name="phone" placeholder="xxx-xxx-xxxx" value="<?php if (isset($_POST['phone'])) {
-                 echo htmlspecialchars($_POST['phone']);
-                 }
 
-                ?>">
-                <span class="error">
-                <?php echo $phone_err; ?>
-               </span>
+               <label for="phone">Phone Number</label>
+                    <input type="tel" placeholder="xxx-xxx-xxxx" name="phone" value="<?php echo $sticky_phone;?>">
+                    <span class="error"><?php echo $phone_err;?></span>
 
                     <label for="plant">Favorite Plant (Choose one):</label>
                     <ul>

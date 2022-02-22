@@ -19,6 +19,7 @@ $nav['project.php'] = 'Project';
 $nav['contact.php'] = 'Contact'; 
 $nav['gallery.php'] = 'Gallery'; 
 
+
 ?>
 
 <!DOCTYPE html>
@@ -61,17 +62,14 @@ $nav['gallery.php'] = 'Gallery';
     ?>
     </ul>
     </nav>
+<body class="<?php echo $body  ;?>">
 
+</body>
 
 
 
 </header>
     
-
-<body class="<?php echo $body  ;?>">
-
-</body>
-
 
 
 </html>

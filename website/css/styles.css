@@ -217,7 +217,7 @@ label {
     margin-bottom: 5px;
     font-weight: bold; 
     margin-top: 5px;
-    font-size: 1.2em;
+    font-size: 1.0em;
     list-style-type: none;
 
 }
@@ -240,6 +240,7 @@ input[type=tel] {
 
 li {
     list-style-type: none;
+    display: block; 
 }
 
 .error{

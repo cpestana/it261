@@ -6,6 +6,7 @@
             <h3>Let us know what kind of plants you'd like for your container garden!</h3>
             <?php include 'includes/form.php';?>
         </main>
+</div>
  
             
            
