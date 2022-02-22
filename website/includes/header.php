@@ -67,10 +67,10 @@ $nav['gallery.php'] = 'Gallery';
 
 </header>
     
+
 <body class="<?php echo $body  ;?>">
 
 </body>
-
 
 
 

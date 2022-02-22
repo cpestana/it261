@@ -20,30 +20,32 @@
 <div id="wrapper">
 
 
-<div id="hero">
-    <?php
-$photos[0] = 'photo1'; 
-$photos[1] = 'photo2';
-$photos[2] = 'photo3';
-$photos[3] = 'photo4';
-$photos[4] = 'photo5';
+<div id="hero_index">
+<?php
+echo '<h2>Things I enjoy</h2>'; 
+
+$photos[0] = 'bird'; 
+$photos[1] = 'coffee';
+$photos[2] = 'plants';
+$photos[3] = 'running';
+$photos[4] = 'shuffleboard';
 
 $i = rand(0, 4); 
 
 $selected_image = ''.$photos[$i].'.jpg'; 
-echo '<img src=".images'.$selected_image.'" alt=" '.$photos[$i].' ">';
+echo '<img src="photos/'.$selected_image.'" alt=" '.$photos[$i].' ">';
 
 function random_images($photos) {
 $my_return = ''; 
 $i = rand(0, 4); 
 $selected_image = ''.$photos[$i].'.jpg';
-$my_return = '<img src=".images'.$selected_image.'" alt=" '.$photos[$i].' ">';
+$my_return = '<img src="photos/'.$selected_image.'" alt=" '.$photos[$i].' ">';
 return $my_return; 
 }
 
-echo random_images($photos); 
 ?>
-</div><!--end hero-->
+
+</div><!--end hero_index-->
 
 <main>
 <div id="h1-header">
