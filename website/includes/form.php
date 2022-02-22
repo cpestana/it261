@@ -153,10 +153,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
      //} // End Server method 
           
 
-       // $headers = array(
-        //    'From' => 'noreply@christinepestana.com', 
-        //    'Reply-to' => ''.$email.''
-        //);
+        $headers = array(
+            'From' => 'noreply@christinepestana.com', 
+            'Reply-to' => ''.$email.''
+             );
 
         mail($to, $subject, $body);
         header('Location: thanx.php');
