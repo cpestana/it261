@@ -126,7 +126,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $_POST['privacy']
     )) {
 
-        $to = 'clpestanaa@gmail.com';
+        $to = 'szemeo@mystudentswa.com';
         $subject = 'We\'ve got the plants you\'re looking for, '.$first_name.'';
         $body = '
         First Name: ' .$first_name. '' . PHP_EOL . '
