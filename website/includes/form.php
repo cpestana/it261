@@ -138,19 +138,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         Plant: ' .$plant. '' . PHP_EOL . '
         Comments: ' .$comments. '' . PHP_EOL . '
         ';
-
-        //if(!empty($first_name &&
-        //$last_name &&
-        //$email &&
-        //$phone &&
-        //$pot_size &&
-        //$plant &&
-        //$climate &&
-        //$comments &&
-        //$privacy) && 
-        //preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', 
-        //$_POST['phone'])){
-     //} // End Server method 
           
 
         $headers = array(
