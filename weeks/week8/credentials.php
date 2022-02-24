@@ -10,7 +10,7 @@
 define('DB_NAME', 'u615959180_it261_people');
 define('DB_HOST', 'localhost'); 
 define('DB_USER', 'u615959180_cpestana');
-define('DB_PASSWORD', 'oliviA1686!');
+define('DB_PASSWORD', 'password');
 
 //WHEN UPLOADING TO GITHUB, DO NOT UPLOAD CREDENTIALS
 //USE .gitignore 
