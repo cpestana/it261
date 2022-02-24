@@ -123,8 +123,8 @@
         </ul>
         <h4>Week 8</h4>
         <ul>
-        <li><a href="weeks/week8/people.php"></a>People.php</li>
-        <li><a href="weeks/week8/config.php"></a>Config.php</li>
+        <li><a href="weeks/week8/people.php">People.php</a></li>
+        <li><a href="weeks/week8/config.php">Config.php</a></li>
         </ul>
 
     </aside>
