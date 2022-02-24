@@ -121,6 +121,11 @@
         <li><a href="weeks/week7/pictures.php">Pictures.php</a></li>
        
         </ul>
+        <h4>Week 8</h4>
+        <ul>
+        <li><a href="weeks/week8/people.php"></a>People.php</li>
+        <li><a href="weeks/week8/config.php"></a>Config.php</li>
+        </ul>
 
     </aside>
 
