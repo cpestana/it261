@@ -11,8 +11,8 @@ $people['queen_alexandria_birdwing'] = 'queen_alexandria_birdwing<b>Queen Alexan
 $people['blue_morpho'] = 'blue_morpho<b>Blue Morpho Butterfly</b> The blue morpho feeds on the juices of rotting fruit. The red and green caterpillar is nocturnal and fond of the leaves of Erythroxylum and members of the pea family. This butterfly is endangered due to habitat loss and collection.';
 $people['zebra_longwing'] = 'zebra_longwing<b>Zebra Longwing Butterfly</b> The coloration of this butterfly reminds people of the black and white stripes of a zebra even though if you look closely there are red spots at the base of the wings, which have a span of 2.8 to 3.9 inches. It is native to South and Central America and can be found in some parts of the southern United States. This makes its range unusually large for a butterfly. The zebra longwing roosts in large groups to protect against predators.';
 
-// $name                      $image
-// $key                         $table
+// variable key             value
+// $name                    $image
 ?>
 <div id="wrapper">
 
@@ -29,3 +29,5 @@ $people['zebra_longwing'] = 'zebra_longwing<b>Zebra Longwing Butterfly</b> The c
 
 <?php
 include('includes/footer.php');
+
+
