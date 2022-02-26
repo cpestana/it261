@@ -33,10 +33,11 @@ echo '
 } //close if statement
 
 ?>
+
 </main>
 
 <aside>
-
+<h3>This is the aside that will be displaying random images</h3>
 </aside>
 
 </div><!--end wrapper from header.php-->

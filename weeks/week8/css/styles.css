@@ -33,6 +33,10 @@ main {
 
 }
 
+li {
+    list-style-type: none;
+}
+
 aside {
     float: right; 
     width: 36.16%; 
@@ -43,4 +47,10 @@ footer {
     clear: both; 
     height: 60px; 
     line-height: 60px; 
+}
+
+footer li{
+    list-style-type: none;
+    float: left; 
+    margin-right: 30px; 
 }
