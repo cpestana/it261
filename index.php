@@ -28,7 +28,7 @@
             <li><a href="calculator.php">Calculator</a></li>
             <li><a href="website/contact.php">Contact</a></li>
             <li><a href="Database.php">Database</a></li>
-            <li><a href="Gallery.php">Gallery</a></li>
+            <li><a href="website/gallery.php">Gallery</a></li>
             </ul>
 
         </nav>   
