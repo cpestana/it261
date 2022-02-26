@@ -10,7 +10,7 @@ $sql = 'SELECT * FROM people';
 //then we are going to connect to the database!
 $iConn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) or die(myError(__FILE__,__LINE__,mysqli_connect_error()));
 
-$result = mysqli_query($iConn, $sql);
+$result = mysqli_query($iConn, $sql) or die(myError(__FILE__,__LINE__,mysqli_error($iConn)));
 
 //we are asking if the number of rows is greater than zero, then we will be able to see the table --almost
 
@@ -22,11 +22,9 @@ echo '
 <ul>
 <li><b>First Name:</b> '.$row['first_name'].'</li>
 <li><b>Last Name:</b> '.$row['last_name'].'</li>
-<li><b>Email:</b> '.$row['email'].'</li>
 <li><b>Birthdate:</b> '.$row['birthdate'].'</li>
-<li><b>Occupation:</b> '.$row['occupation'].'</li>
 </ul>
-<p>'.$row['details'].'</p>
+<p>For more information about '.$row['first_name'].' Click <a href="people-view.php?id='.$row['people_id'].'">Here</a></p>
 ';
 
 } //close while loop

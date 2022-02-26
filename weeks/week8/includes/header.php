@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>People Page Class Exercise</title>
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
 </head>
 <body>
     
 <div id="wrapper">
     <!--you will close your wrapper on your people.php page -->
 
-    

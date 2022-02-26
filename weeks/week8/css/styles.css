@@ -1,0 +1,46 @@
+/* My styles for my week 8 people page */
+* {
+    padding: 0; 
+    margin: 0; 
+    box-sizing: 0; 
+
+}
+
+body {
+    background: beige; 
+
+}
+
+#wrapper {
+    max-width: 1200px;
+    /*values from 940px grid*/
+    margin: 20px auto; 
+    background: lightcyan; 
+}
+
+main {
+    float: left; 
+    /*main in px = 580pc */
+    /*change to percentages = 580 divided by 94 */
+    width: 61.70%; 
+    background: pink; 
+}
+
+.inner { 
+    max-width: 1200px;
+    /*values from 940px grid*/
+ 
+
+}
+
+aside {
+    float: right; 
+    width: 36.16%; 
+    background: tan; 
+}
+
+footer {
+    clear: both; 
+    height: 60px; 
+    line-height: 60px; 
+}

@@ -125,6 +125,7 @@
         <ul>
         <li><a href="weeks/week8/people.php">People.php</a></li>
         <li><a href="weeks/week8/config.php">Config.php</a></li>
+        <li><a href="weeks/week8/people-view.php">People-View.php</a></li>
         </ul>
 
     </aside>
