@@ -12,3 +12,5 @@
             </ul>
         </div> <!--end inner-footer-->
     </footer>
+</body>
+</html>
