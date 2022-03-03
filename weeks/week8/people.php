@@ -57,7 +57,7 @@ $my_return = '<img src="images/'.$selected_image.'" alt=" '.$photos[$i].' ">';
 return $my_return; 
 }
 
-echo random_images($photos); 
+
 
 ?>
 </aside>
