@@ -14,8 +14,8 @@ body {
 #wrapper {
     max-width: 1200px;
     /*values from 940px grid*/
-    margin: 20px auto; 
-    background: lightcyan; 
+    margin: 30px auto; 
+    
 }
 
 main {
@@ -23,24 +23,54 @@ main {
     /*main in px = 580pc */
     /*change to percentages = 580 divided by 94 */
     width: 61.70%; 
-    background: pink; 
+   
 }
 
 .inner { 
     max-width: 1200px;
     /*values from 940px grid*/
  
-
 }
 
 li {
     list-style-type: none;
 }
 
+main ul {
+    margin-left:20px; 
+    margin-bottom:10px;
+}
+
+p {
+    line-height:1.4; 
+
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
 aside {
     float: right; 
     width: 36.16%; 
-    background: tan; 
+    text-align: center;
+    
+}
+
+aside img {
+    display:block;
+    margin:0 auto; 
 }
 
 footer {
