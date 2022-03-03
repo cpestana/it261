@@ -37,7 +37,29 @@ echo '
 </main>
 
 <aside>
-<h3>This is the aside that will be displaying random images</h3>
+    <?php
+$photos[0] = 'whitehouse'; 
+$photos[1] = 'whitehousegarden';
+$photos[2] = 'whitehouselovewins';
+$photos[3] = 'ovaloffice';
+$photos[4] = 'southportico';
+
+$i = rand(0, 4); 
+
+$selected_image = ''.$photos[$i].'.jpg'; 
+echo '<img src="images/'.$selected_image.'" alt=" '.$photos[$i].' ">';
+
+function random_images($photos) {
+$my_return = ''; 
+$i = rand(0, 4); 
+$selected_image = ''.$photos[$i].'.jpg';
+$my_return = '<img src="images/'.$selected_image.'" alt=" '.$photos[$i].' ">';
+return $my_return; 
+}
+
+echo random_images($photos); 
+
+?>
 </aside>
 
 </div><!--end wrapper from header.php-->
