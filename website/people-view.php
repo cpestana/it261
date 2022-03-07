@@ -6,7 +6,7 @@ include('config.php');
 if(isset($_GET['id'])) {
 $id = (int)$_GET['id']; 
 } else {
-    header('Location:project.php'); 
+    header('Location: project.php'); 
 }
 
 // we have to select from the table and make sure that
@@ -24,6 +24,7 @@ while($row = mysqli_fetch_assoc($result)){
 $first_name = stripslashes($row['first_name']);
 $last_name = stripslashes($row['last_name']);   
 $details = stripslashes($row['details']);
+$feedback = '';
 } //closing while loop
 
 } else {//closing if mysqli_num rows
@@ -40,7 +41,7 @@ include('./includes/header.php');
 
 <main>
     <h1>House of Gryffindor</h1>
-    <h2>Welcome to <?= $first_name?>'s Page!</h2>
+    <h2>Welcome to <?php echo ''.$first_name.' '.$last_name.'' ;?>'s Page!</h2>
     <ul>
         <?php
         echo'
@@ -56,7 +57,7 @@ include('./includes/header.php');
 </main>
 <aside>
     <figure>
-        <img src="images/people<?= $id ?>.jpg" alt="<?= $first_name ?>">
+        <img src="people/<?= $id ?>.jpg" alt="<?= $first_name ?>">
         <figcaption><?php echo ''.$first_name.' '.$last_name.', '.$details.' ';?></figcaption>
     </figure>
 
@@ -67,6 +68,7 @@ include('./includes/header.php');
 </div><!--end wrapper from header.php-->
 
 <?php
+
 
 
 include('./includes/footer.php'); 

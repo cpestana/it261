@@ -95,6 +95,12 @@ nav a{
     
  }
 
+ #photos {
+     float: right; 
+     display: block; 
+     
+ }
+
 main {
     width : 50%;
     float : left;

@@ -47,13 +47,13 @@ $photos[4] = 'swordofgryffindor';
 $i = rand(0, 4); 
 
 $selected_image = ''.$photos[$i].'.jpg'; 
-echo '<img src="photos/'.$selected_image.'" alt=" '.$photos[$i].' ">';
+echo '<img id="photos" src="photos/'.$selected_image.'" alt=" '.$photos[$i].' ">';
 
 function random_images($photos) {
 $my_return = ''; 
 $i = rand(0, 4); 
 $selected_image = ''.$photos[$i].'.jpg';
-$my_return = '<img src="photos/'.$selected_image.'" alt=" '.$photos[$i].' ">';
+$my_return = '<img id="photos" src="photos/'.$selected_image.'" alt=" '.$photos[$i].' ">';
 return $my_return; 
 }
 
