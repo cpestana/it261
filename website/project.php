@@ -4,9 +4,10 @@ include('./includes/header.php');
 ?>
 
 <main>
-<h1>Welcome to my people page</h1>
+
+<h1>The House of Gryffindor</h1>
 <?php
-$sql = 'SELECT * FROM people'; 
+$sql = 'SELECT * FROM gryffindor'; 
 //then we are going to connect to the database!
 $iConn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) or die(myError(__FILE__,__LINE__,mysqli_connect_error()));
 
@@ -22,7 +23,7 @@ echo '
 <ul>
 <li><b>First Name:</b> '.$row['first_name'].'</li>
 <li><b>Last Name:</b> '.$row['last_name'].'</li>
-<li><b>Birthdate:</b> '.$row['birthdate'].'</li>
+<li><b>Details:</b> '.$row['details'].'</li>
 </ul>
 <p>For more information about '.$row['first_name'].' Click <a href="people-view.php?id='.$row['people_id'].'">Here</a></p>
 ';
@@ -33,11 +34,32 @@ echo '
 } //close if statement
 
 ?>
-
 </main>
 
 <aside>
-<h3>This is the aside that will be displaying random images</h3>
+<?php
+$photos[0] = 'gryffindorcrest'; 
+$photos[1] = 'hogwarts';
+$photos[2] = 'hogwartsexpress';
+$photos[3] = 'hogwartshall';
+$photos[4] = 'swordofgryffindor';
+
+$i = rand(0, 4); 
+
+$selected_image = ''.$photos[$i].'.jpg'; 
+echo '<img src="photos/'.$selected_image.'" alt=" '.$photos[$i].' ">';
+
+function random_images($photos) {
+$my_return = ''; 
+$i = rand(0, 4); 
+$selected_image = ''.$photos[$i].'.jpg';
+$my_return = '<img src="photos/'.$selected_image.'" alt=" '.$photos[$i].' ">';
+return $my_return; 
+}
+
+
+
+?>
 </aside>
 
 </div><!--end wrapper from header.php-->

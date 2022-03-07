@@ -91,6 +91,7 @@ aside{
     background: white;
     float:right;
     margin-left: 20px; 
+    display:block; 
 }
 
 #birdPhoto{
