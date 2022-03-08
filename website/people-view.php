@@ -1,5 +1,7 @@
 <?php
 include('config.php'); 
+include('./includes/header.php'); 
+
 //people-view.php
 //if id has been set
 
@@ -34,9 +36,6 @@ $feedback = 'Houston, we have a problem!';
 
 // we will place all of the php here BEFORE we call out the header.php
 
-
-
-include('./includes/header.php'); 
 ?>
 
 <main>
@@ -57,8 +56,8 @@ include('./includes/header.php');
 </main>
 <aside>
     <figure>
-        <img src="people/<?= $id ?>.jpg" alt="<?= $first_name ?>">
-        <figcaption><?php echo ''.$first_name.' '.$last_name.', '.$details.' ';?></figcaption>
+        <img src="people<?= $id ?>.jpg" alt="<?= $first_name ?>">
+        <figcaption><?php echo ''.$first_name.' '.$last_name.'';?></figcaption>
     </figure>
 
 

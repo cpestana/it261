@@ -25,7 +25,7 @@ echo '
 <li><b>Last Name:</b> '.$row['last_name'].'</li>
 <li><b>Details:</b> '.$row['details'].'</li>
 </ul>
-<p>For more information about '.$row['first_name'].' Click <a href="people-view.php?id='.$row['people_id'].'">Here</a></p>
+<p>For more information about '.$row['first_name'].' Click <a href="people-view.php?id='.$row['gryffindor_id'].'">Here</a></p>
 ';
 
 } //close while loop

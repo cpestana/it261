@@ -62,9 +62,6 @@ $nav['gallery.php'] = 'Gallery';
     ?>
     </ul>
     </nav>
-<body class="<?php echo $body  ;?>">
-
-
 
 
 </header>
