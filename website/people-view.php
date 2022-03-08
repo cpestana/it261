@@ -56,7 +56,7 @@ $feedback = 'Houston, we have a problem!';
 </main>
 <aside>
     <figure>
-        <img src="people<?= $id ?>.jpg" alt="<?= $first_name ?>">
+        <img src="images/gryffindor<?= $id ?>.jpg" alt="<?= $first_name ?>">
         <figcaption><?php echo ''.$first_name.' '.$last_name.'';?></figcaption>
     </figure>
 
