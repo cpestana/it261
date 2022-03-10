@@ -65,6 +65,163 @@ switch($today){
         break;
 }
 
+//FORM
+
+ob_start();
+
+
+$first_name = '';
+$last_name = '';
+$email = '';
+$phone = '';
+$plant = ''; 
+$pot_size = ''; 
+$climate = '';
+$comments = '';
+$privacy = '';
+
+$first_name_err = '';
+$last_name_err = '';
+$email_err = '';
+$phone_err = '';
+$plant_err = '';
+$pot_size_err = ''; 
+$climate_err = ''; 
+$comments_err = '';
+$privacy_err = '';
+$sticky_phone = '';
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+    if (empty($_POST['first_name'])) {
+        $first_name_err = 'Please fill out your First Name.';
+    } else {
+        $first_name = $_POST['first_name'];
+    }
+
+    if (empty($_POST['last_name'])) {
+        $last_name_err = 'Please fill out your Last Name.';
+    } else {
+        $last_name = $_POST['last_name'];
+    }
+
+    if (empty($_POST['email'])) {
+        $email_err = 'Please enter your email.';
+    } else {
+        $email = $_POST['email'];
+    }
+
+    //if (empty($_POST['phone'])) {
+    //    $phone_err = 'Please enter your phone number!';
+    //} else {
+     //   $phone = $_POST['phone'];
+    //}
+
+    if(empty($_POST['phone'])) {  // if empty, type in your number
+        $phone_err = 'Please enter your phone number';
+    }elseif(array_key_exists('phone', $_POST)){
+        if(!preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone'])){
+            $phone_err = 'Invalid format. Enter in format xxx-xxx-xxxx';
+            $sticky_phone = $_POST['phone'];
+            unset($_POST['phone']);
+        }else{
+        $phone = $_POST['phone'];
+        $sticky_phone = $_POST['phone'];
+        }
+    }
+
+    /* if(empty($_POST['phone'])) { // if empty, type in your number
+        $phone_err = 'Your phone number please!';
+        } elseif(array_key_exists('phone', $_POST)){
+        if(!preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone']))
+        { // if you are not typing the requested format of xxx-xxx-xxxx, display Invalid format
+        $phone_err = 'Invalid format!';
+        } else{
+        $phone = $_POST['phone'];
+        } // end else
+        } // end main if */
+
+    if (empty($_POST['plant'])) {
+        $plant_err = 'Please let us know what plant you are looking for!';
+    } else {
+        $plant = $_POST['plant'];
+    }
+
+    if (empty($_POST['climate'])) {
+        $climate_err = 'Please select your climate!';
+    } else {
+        $climate = $_POST['climate'];
+    }
+
+    if ($_POST['pot_size'] == null) {
+        $pot_size_err = 'What size pot do you need?';
+    } else {
+        $pot_size = $_POST['pot_size'];
+    }
+
+    if (empty($_POST['comments'])) {
+        $comments_err = 'Your comments, please!';
+    } else {
+        $comments = $_POST['comments'];
+    }
+
+    if (empty($_POST['privacy'])) {
+        $privacy_err = 'Agree if you want the plants!';
+    } else {
+        $privacy = $_POST['privacy'];
+    }
+    //end error handling
+
+    // climate function 
+    function climate($climate){
+        $climate_return = '';
+        if (!empty($_POST['climate'])) {
+            $climate_return = implode('', $_POST['climate']);
+        }
+        return $climate_return;
+    }
+    //end of function
+   
+    //begin email send 
+    if (isset(
+        $_POST['first_name'],
+        $_POST['last_name'],
+        $_POST['email'],
+        $_POST['phone'],
+        $_POST['pot_size'],
+        $_POST['climate'],
+        $_POST['comments'],
+        $_POST['privacy']
+    )) {
+
+        $to = 'szemeo@mystudentswa.com';
+        $subject = 'We\'ve got the plants you\'re looking for, '.$first_name.'';
+        $body = '
+        First Name: ' .$first_name. '' . PHP_EOL . '
+        Last Name: ' .$last_name. '' . PHP_EOL . '
+        Pot_size: ' .$pot_size. '' . PHP_EOL . '
+        Climate: ' .climate($climate). '' . PHP_EOL . '
+        Phone: ' .$phone. '' . PHP_EOL . '
+        Email: ' .$email. '' . PHP_EOL . '
+        Plant: ' .$plant. '' . PHP_EOL . '
+        Comments: ' .$comments. '' . PHP_EOL . '
+        ';
+          
+
+        $headers = array(
+            'From' => 'noreply@christinepestana.com', 
+            'Reply-to' => ''.$email.''
+             );
+
+        mail($to, $subject, $body, $headers);
+        header('Location: thanx.php');
+
+    } // close if not empty statement
+
+ } //close isset
+
+
+
 
 //our config file for project
 ob_start();  // prevents header errors before reading the whole page!
