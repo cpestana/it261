@@ -9,5 +9,5 @@
 </head>
 <body>
     
-<div id="wrapper">
-    <!--you will close your wrapper on your people.php page -->
+<header>
+

@@ -6,6 +6,7 @@ include('server.php');
 include('includes/header.php');
 
 ?>
+</header>
 <div id="wrapper">
 <h1 class="center">Login</h1>
 <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ; ?>" method="post" >

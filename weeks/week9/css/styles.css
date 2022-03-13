@@ -19,18 +19,6 @@ body {
     font-style: italic;
 }
 
-footer {
-    clear: both; 
-    height: 60px; 
-    line-height: 60px; 
-}
-
-footer li{
-    list-style-type: none;
-    float: left; 
-    margin-right: 30px; 
-}
-
 form ul {
     margin-left: 10px; 
     list-style-type: none;
@@ -46,6 +34,10 @@ form {
 fieldset {
     border:1px solid thistle; 
     padding: 10px; 
+}
+
+header{
+    background:thistle;
 }
 
 label {
@@ -85,16 +77,24 @@ li {
     font-style: italic;
 }
 
-footer {
-    clear: both; 
+footer { 
     height: 60px; 
     line-height: 60px; 
+    background: beige; 
+    text-align: center;
+}
+
+#inner{
+    background: beige; 
+    float: center; 
 }
 
 footer li{
     list-style-type: none;
-    float: left; 
-    margin-right: 30px; 
+    margin-right: 20px; 
+    display: inline; 
+    
+  
 }
 
 form ul {
@@ -108,6 +108,15 @@ select, textarea {
      
 }
 
+.success{
+    float: left; 
+    margin-left: 5%; 
+    margin-top: 20px; 
+    width: 200px; 
+    padding: 10px; 
+
+}
+
 textarea{
     width: 100%; 
     resize: none; 
@@ -115,6 +124,16 @@ textarea{
     
 }
 
+.welcome-logout{
+    float: right;
+    margin-right: 5%; 
+    margin-top: 20px; 
+    width: 200px; 
+    padding: 10px; 
+}
+
 #wrapper{
     text-align: center;
+    clear: both; 
 }
+

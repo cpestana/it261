@@ -31,7 +31,7 @@ if(isset($_SESSION['success'])) : ?>
     ?>
 </h3>
 </div><!-- end div success -->
-<?php endif ; ?>
+<?php endif ;?>
 
 <?php
 if(isset($_SESSION['username'])) : ?>
