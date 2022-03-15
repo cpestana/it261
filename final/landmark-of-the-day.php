@@ -18,7 +18,7 @@
         </aside>
 
         <div id="listWrapper">
-            <h3>Daily Raptor Pages</h3>
+            <h3>Daily Landmark Pages</h3>
             <ul>
                 <?php 
                     foreach($day_array as $bird => $day){

@@ -1,6 +1,7 @@
 
 <?php
 
+//day array (part of switch)
 ob_start(); 
 date_default_timezone_set('America/Los_Angeles');
 
@@ -73,21 +74,16 @@ define('DEBUG', 'TRUE');  // We want to see our errors
 
 include('credentials.php');
 
- 
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
+// initialize variables
+$first_name = '';
+$last_name = '';
+$email = '';
+$username = '';
+$password = '';
+$success = 'Successfully logged on';
+$errors = array();
+  
 
 function myError($myFile, $myLine, $errorMsg)
 {

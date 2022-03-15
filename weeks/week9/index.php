@@ -38,7 +38,7 @@ if(isset($_SESSION['username'])) : ?>
 
 <div class="welcome-logout">
 <h3>
-    Hello <?php echo htmlspecialchars($_SESSION['username']);?>
+    Hello, <?php echo htmlspecialchars($_SESSION['username']);?>!
 </h3>
 <p><a href="index.php?logout='1' ">Log Out</a></p>
 </div> <!-- close logout/welcome div -->
