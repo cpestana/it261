@@ -1,0 +1,134 @@
+* {
+    padding: 0; 
+    margin: 0; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+aside {
+    float: right; 
+
+}
+
+aside ul {
+    margin: 2px; 
+    padding: 2px; 
+    
+}
+
+aside li {
+    margin: auto; 
+    list-style-type: none;
+}
+
+#birdPhoto{
+    width:100%;
+    height:100%;
+    margin:0 auto;
+    border: 5px solid beige;
+    border-radius:5%;
+    clear: both; 
+    margin-top: 2px; 
+    margin-right: 5px; 
+}
+
+body {
+    background: white; 
+}
+
+footer {
+    clear:both; 
+    height: 100px;
+    line-height:5px;
+    background: rgb(241, 174, 150); 
+    padding: 15px 10px; 
+    text-align: center;
+    margin : 0 auto;
+
+}
+
+footer li { 
+    float:left; 
+    margin-right:20px;
+    list-style-type:none;
+    padding: 5px; 
+}
+
+h1 {
+    margin-bottom: 2%;
+}
+
+header {
+    background: rgb(241, 174, 150);
+    height: 100px;
+    padding: 2px; 
+    
+}
+
+#hero {
+    height: 300px; 
+    background: white; 
+    clear: both; 
+    padding: 1px; 
+}
+
+#listWrapper{
+    margin:30px;
+    float:left;
+}
+#listWrapper ul{
+    margin:0 20px 20px 20px;
+}
+
+main {
+    float: left; 
+    /*main in px = 580pc */
+    /*change to percentages = 580 divided by 94 */
+    width: 61.70%; 
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+   
+}
+
+main li {
+    list-style-type: none;
+}
+
+nav {
+    height:50px;
+    margin-top: 30px; 
+}
+
+nav ul {
+     
+    padding: 5px; 
+    margin-right: 5%; 
+    float: right; 
+}
+
+nav li {
+    list-style-type: none;
+    display: inline; 
+    padding: 5px; 
+    
+   
+}
+
+#images {
+    width: 50%; 
+    height: 50%; 
+    float: left; 
+    display: block; 
+    margin-top: 2%; 
+    margin-left: 2%; 
+}
+
+#wrapper {
+    max-width: 1200px;
+    /*values from 940px grid*/
+    margin: 30px auto; 
+    clear: both; 
+    margin-top: 2%;
+}
+
+

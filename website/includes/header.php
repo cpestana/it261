@@ -50,19 +50,6 @@ $nav['gallery.php'] = 'Gallery';
 <header>
 
 
-        
-
-    <!-- <nav>
-    <ul>
-            <li><a href="daily.php">Switch</a></li>
-            <li><a href="Troubleshoot.php">Troubleshoot</a></li>
-            <li><a href="Calculator.php">Calculator</a></li>
-            <li><a href="Email.php">Email</a></li>
-            <li><a href="Database.php">Database</a></li>
-            <li><a href="Gallery.php">Gallery</a></li>
-         </ul>
-    </nav>    -->
-
     <nav>
 <ul>
     <?php
