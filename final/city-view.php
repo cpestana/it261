@@ -37,7 +37,7 @@ $feedback = 'Houston, we have a problem!';
 // we will place all of the php here BEFORE we call out the header.php
 
 ?>
-
+<div id="city-view-main">
 <main>
     <h1>Most Exciting Cities in England!</h1>
     <h2>Welcome to <?php echo ''.$city_name.'' ;?>!</h2>
@@ -54,9 +54,10 @@ $feedback = 'Houston, we have a problem!';
     </ul>
     <p><a href="england-cities.php">Return to British Cities!</a></p>
 </main>
+</div>
 <aside>
     <figure>
-        <img src="images/gryffindor<?= $id ?>.jpg" alt="<?= $city_name ?>">
+        <img id="england-photos" src="images/england<?= $id ?>.jpg" alt="<?= $city_name ?>">
         <figcaption><?php echo ''.$city_name.'';?></figcaption>
     </figure>
 
