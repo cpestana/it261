@@ -5,7 +5,7 @@ include('./includes/header.php');
 
 <main>
 
-<h1>The most exciting cities in England</h1>
+<h1>The Most Exciting Cities in England</h1>
 <?php
 $sql = 'SELECT * FROM england'; 
 //then we are going to connect to the database!

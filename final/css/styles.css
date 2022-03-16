@@ -29,13 +29,25 @@ aside li {
     clear: both; 
     margin-top: 2px; 
     margin-right: 5px; 
+    margin-bottom: 2px; 
 }
 
 body {
     background: white; 
 }
 
+button {
+    background-color: coral; 
+    border: black;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+  }
+
 footer {
+    width: 100%; 
     clear:both; 
     height: 100px;
     line-height:5px;
@@ -55,7 +67,14 @@ footer li {
 
 h1 {
     margin-bottom: 2%;
+    margin-top: 2%;
 }
+
+#h1-contact {
+    text-align: center;
+    color: rgb(199, 72, 26); 
+}
+
 
 header {
     background: rgb(241, 174, 150);
@@ -71,12 +90,35 @@ header {
     padding: 1px; 
 }
 
+#images {
+    width: 50%; 
+    height: 50%; 
+    float: left; 
+    display: block; 
+    margin-top: 2%; 
+    margin-left: 2%; 
+    margin-bottom: 2%;
+    margin-right: 2%; 
+}
+
+#index-main {
+    margin-left: 30%;
+}
+
 #listWrapper{
     margin:30px;
     float:left;
 }
 #listWrapper ul{
     margin:0 20px 20px 20px;
+}
+
+.login-h1 {
+    text-align: center; 
+}
+
+.register-h1 {
+    text-align: center; 
 }
 
 main {
@@ -114,21 +156,102 @@ nav li {
    
 }
 
-#images {
-    width: 50%; 
-    height: 50%; 
+#register {
+    text-align: center;
+    margin-bottom: 5%; 
+}
+
+.success{
     float: left; 
-    display: block; 
-    margin-top: 2%; 
-    margin-left: 2%; 
+    margin-left: 5%; 
+    margin-top: 20px; 
+    width: 200px; 
+    padding: 10px; 
+}
+
+
+.welcome-logout {
+    float: right;
+    margin-right: 5%; 
+    margin-top: 20px; 
+    width: 200px; 
+    padding: 10px; 
 }
 
 #wrapper {
     max-width: 1200px;
     /*values from 940px grid*/
+    height: 600px; 
     margin: 30px auto; 
     clear: both; 
     margin-top: 2%;
+}
+
+#wrapper-login {
+    text-align: center;
+}
+
+
+.error{
+    display: block; 
+    color: red; 
+    margin-bottom: 8px;
+    font-style: italic;
+}
+
+form ul {
+    margin-left: 10px; 
+    list-style-type: none;
+    margin-bottom: 7px;
+}
+
+form {
+    width: 400px; 
+    margin: 20px auto; 
+
+}
+
+fieldset {
+    border:1px solid thistle; 
+    padding: 10px; 
+}
+
+
+label {
+    display: block; 
+    margin-bottom: 5px;
+    font-weight: bold; 
+    margin-top: 5px;
+    font-size: 1.2em;
+    list-style-type: none;
+
+}
+
+input[type=submit] {
+    display: block; 
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+
+input[type=text], 
+input[type=email], 
+input[type=password] {
+    display: block; 
+    height: 30px; 
+    width: 100%; 
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.error{
+    display: block; 
+    color: red; 
+    margin-bottom: 8px;
+    font-style: italic;
 }
 
 

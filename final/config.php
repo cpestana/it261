@@ -68,6 +68,167 @@ switch($today){
 }
 
 
+
+
+//FORM
+
+ob_start();
+
+
+$first_name = '';
+$last_name = '';
+$email = '';
+$phone = '';
+$city = ''; 
+$view = ''; 
+$type = '';
+$comments = '';
+$privacy = '';
+
+$first_name_err = '';
+$last_name_err = '';
+$email_err = '';
+$phone_err = '';
+$city_err = '';
+$view_err = ''; 
+$type_err = ''; 
+$comments_err = '';
+$privacy_err = '';
+$sticky_phone = '';
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+    if (empty($_POST['first_name'])) {
+        $first_name_err = 'Please fill out your First Name.';
+    } else {
+        $first_name = $_POST['first_name'];
+    }
+
+    if (empty($_POST['last_name'])) {
+        $last_name_err = 'Please fill out your Last Name.';
+    } else {
+        $last_name = $_POST['last_name'];
+    }
+
+    if (empty($_POST['email'])) {
+        $email_err = 'Please enter your email.';
+    } else {
+        $email = $_POST['email'];
+    }
+
+    //if (empty($_POST['phone'])) {
+    //    $phone_err = 'Please enter your phone number!';
+    //} else {
+     //   $phone = $_POST['phone'];
+    //}
+
+    if(empty($_POST['phone'])) {  // if empty, type in your number
+        $phone_err = 'Please enter your phone number';
+    }elseif(array_key_exists('phone', $_POST)){
+        if(!preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone'])){
+            $phone_err = 'Invalid format. Enter in format xxx-xxx-xxxx';
+            $sticky_phone = $_POST['phone'];
+            unset($_POST['phone']);
+        }else{
+        $phone = $_POST['phone'];
+        $sticky_phone = $_POST['phone'];
+        }
+    }
+
+    /* if(empty($_POST['phone'])) { // if empty, type in your number
+        $phone_err = 'Your phone number please!';
+        } elseif(array_key_exists('phone', $_POST)){
+        if(!preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone']))
+        { // if you are not typing the requested format of xxx-xxx-xxxx, display Invalid format
+        $phone_err = 'Invalid format!';
+        } else{
+        $phone = $_POST['phone'];
+        } // end else
+        } // end main if */
+
+    if (empty($_POST['city'])) {
+        $city_err = 'Please let us know what city you\'re interested in!';
+    } else {
+        $city = $_POST['city'];
+    }
+
+    if (empty($_POST['type'])) {
+        $type_err = 'Please select your Home Type!';
+    } else {
+        $type = $_POST['type'];
+    }
+
+    if ($_POST['view'] == null) {
+        $view = 'What kind of view are you looking for?';
+    } else {
+        $view = $_POST['view'];
+    }
+
+    if (empty($_POST['comments'])) {
+        $comments_err = 'Your comments, please!';
+    } else {
+        $comments = $_POST['comments'];
+    }
+
+    if (empty($_POST['privacy'])) {
+        $privacy_err = 'Agree if you want to go any further!';
+    } else {
+        $privacy = $_POST['privacy'];
+    }
+    //end error handling
+
+    // type function 
+    function type($type){
+        $type_return = '';
+        if (!empty($_POST['type'])) {
+            $type_return = implode('', $_POST['type']);
+        }
+        return $type_return;
+    }
+    //end of function
+   
+    //begin email send 
+    if (isset(
+        $_POST['first_name'],
+        $_POST['last_name'],
+        $_POST['email'],
+        $_POST['phone'],
+        $_POST['view'],
+        $_POST['city'],
+        $_POST['type'],
+        $_POST['comments'],
+        $_POST['privacy']
+    )) {
+
+        $to = 'clpestanaa@gmail.com';
+        $subject = 'We can help you find your city in England, '.$first_name.'';
+        $body = '
+        First Name: ' .$first_name. '' . PHP_EOL . '
+        Last Name: ' .$last_name. '' . PHP_EOL . '
+        View: ' .$view. '' . PHP_EOL . '
+        City: ' .$city. '' . PHP_EOL . '
+        Home Type: ' .type($type). '' . PHP_EOL . '
+        Phone: ' .$phone. '' . PHP_EOL . '
+        Email: ' .$email. '' . PHP_EOL . '
+        Comments: ' .$comments. '' . PHP_EOL . '
+        ';
+          
+
+        $headers = array(
+            'From' => 'noreply@christinepestana.com', 
+            'Reply-to' => ''.$email.''
+             );
+
+        mail($to, $subject, $body, $headers);
+        header('Location: thanx.php');
+
+    } // close if not empty statement
+
+ } //close isset
+
+
+
+
 // config file for england-cities database
 ob_start();  // prevents header errors before reading the whole page!
 define('DEBUG', 'TRUE');  // We want to see our errors

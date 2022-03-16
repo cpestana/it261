@@ -1,12 +1,23 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php echo $title ;?></title>
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+</head>
    
 <?php
 include('server.php');
-include ('includes/header.php');
+
 
 ?>
 <div id="wrapper">
+<div id="login-h1">
 <h1>Register today</h1>
+</div>
 
 <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ;?>" method="post">
     <fieldset>
@@ -43,9 +54,10 @@ include ('includes/header.php');
     </fieldset>
 
 </form>
+    <div id="register">
     <h3>Already registered?</h3>
     <span class="block"><a href="login.php">Log in here</a></span>
-
+    </div>
 </div><!--close wrapper-->
 
 <?php

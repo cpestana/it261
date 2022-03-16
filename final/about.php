@@ -1,7 +1,7 @@
 <?php include('includes/header.php'); ?>
 <link rel="stylesheet" href="css/about.css" type="text/css">
 <div id="wrapper">
-    <h2><?php echo $headline; ?></h2>
+
     <main>
         <h3>Most Exciting Cities in England!</h3>
         <p>Join a community of people who love England and have the opportunity to move there! This website is intended to help you find your favorite city in England to move to as an expat.</p>
