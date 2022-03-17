@@ -1,4 +1,3 @@
-
 <?php
 
 //day array (part of switch)
@@ -152,10 +151,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $city = $_POST['city'];
     }
 
-    if (empty($_POST['type'])) {
+    if (empty($_POST['types'])) {
         $type_err = 'Please select your Home Type!';
     } else {
-        $type = $_POST['type'];
+        $type = $_POST['types'];
     }
 
     if ($_POST['view'] == null) {
@@ -178,14 +177,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     //end error handling
 
     // type function 
-    function type($type){
-        $type_return = '';
-        if (!empty($_POST['type'])) {
-            $type_return = implode('', $_POST['type']);
+    function type($type)
+    {
+        $my_return = '';
+        if (!empty($_POST['types'])) {
+            $my_return = implode('', $_POST['types']);
+        } else {
+            $type_err = 'Please check your types'; 
         }
-        return $type_return;
+        return $my_return;
     }
     //end of function
+
+
    
     //begin email send 
     if (isset(
@@ -195,7 +199,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $_POST['phone'],
         $_POST['view'],
         $_POST['city'],
-        $_POST['type'],
+        $_POST['types'],
         $_POST['comments'],
         $_POST['privacy']
     )) {

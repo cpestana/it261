@@ -56,23 +56,28 @@
                 <option value="water" <?php if (isset($_POST['view']) && $_POST['view'] == 'water') {
     echo 'selected="unselected"';
 }?>>Water</option>
-
                 <span class="error">
                     <?php echo $view_err; ?>
                 </span>
 
+                <label for="types">Home Type</label>
 
-                    <label for="type">Home Type:</label>
-                    
-                    <ul>
-                        <li><input type="checkbox" name="type[0]" value="flat" <?php if(isset($_POST['type']) && in_array('flat',$type)) echo 'checked="checked"';?>>Flat</li>
-                        <li><input type="checkbox" name="type[1]" value="semi-detached" <?php if(isset($_POST['type']) && in_array('semi-detached', $type)) echo 'checked="checked"'; ?>>Semi-Detached</li>
-                        <li><input type="checkbox" name="type[2]" value="detached" <?php if(isset($_POST['type']) && in_array('detached', $type)) echo 'checked="checked"'; ?>>Detached</li>
-                    </ul>
-                    <span class="error">
-                    <?php echo $type_err; ?>
-                    </span>
- 
+<ul>
+    <li><input type="checkbox" name="types[]" value="flat" <?php if (isset($_POST['types']) && in_array('flat', $type)) {
+echo 'checked="checked"';
+}
+?>>Flat</li>
+    <li><input type="checkbox" name="types[]" value="semi-detached" <?php if (isset($_POST['types']) && in_array('semi-detached', $type)) {
+echo 'checked="checked"';
+}?>>Semi-Detached</li>
+    <li><input type="checkbox" name="types[]" value="detached" <?php if (isset($_POST['types']) && in_array('detached', $type)) {
+echo 'checked="checked"';
+}?>>Detached</li>
+    
+</ul>
+<span class="error">
+    <?php echo $type_err; ?>
+</span>
 
                     <label for="comments">Comments</label>
                     <textarea name="comments" ><?php if(isset($_POST['comments'])) echo htmlspecialchars($_POST['comments']);?></textarea>
