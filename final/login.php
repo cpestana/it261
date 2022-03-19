@@ -42,5 +42,3 @@ include('server.php');
 </div>
 
 </div><!--close div-->
-<?php
-include('includes/footer.php'); 

@@ -38,7 +38,9 @@ if(isset($_SESSION['success'])) : ?>
     <h3>
         Hello <?php echo htmlspecialchars($_SESSION['username']);?>
     </h3>
+    
     <button><a href="index.php?logout='1' ">Log Out</a></button>
+
     </div> <!-- close logout/welcome div -->
     <?php endif ;?>
     

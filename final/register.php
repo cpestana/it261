@@ -61,5 +61,3 @@ include('server.php');
     </div>
 </div><!--close wrapper-->
 
-<?php
-include('includes/footer.php'); 

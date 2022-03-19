@@ -42,7 +42,9 @@ $nav['contact.php'] = 'Contact';
     <link href="css/styles.css" type="text/css" rel="stylesheet">
 </head>
 <header>
-
+    <div class="header-inner">
+    <img src="images/englandlogo.png" height="80px" width="80px" alt="england-flag-logo">
+</div>
     <nav>
 <ul>
     <?php
