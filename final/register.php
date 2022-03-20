@@ -1,5 +1,4 @@
 
- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -60,4 +59,3 @@ include('server.php');
     <span class="block"><a href="login.php">Log in here</a></span>
     </div>
 </div><!--close wrapper-->
-

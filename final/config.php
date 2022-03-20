@@ -240,14 +240,6 @@ define('DEBUG', 'TRUE');  // We want to see our errors
 include('credentials.php');
 
 
-// initialize variables
-$first_name = '';
-$last_name = '';
-$email = '';
-$username = '';
-$password = '';
-$success = 'Successfully logged on';
-$errors = array();
   
 
 function myError($myFile, $myLine, $errorMsg)
@@ -264,3 +256,62 @@ if(defined('DEBUG') && DEBUG)
     
     
 }
+
+// create function for navigation, so that header.php can all nav function
+
+$nav['index.php'] = 'Home'; 
+$nav['about.php'] = 'About'; 
+$nav['landmark-of-the-day.php'] = 'Landmarks'; 
+$nav['england-cities.php'] = 'Cities'; 
+$nav['contact.php'] = 'Contact'; 
+
+function create_nav($nav){
+    $nav_list = '';
+    foreach($nav as $key => $value){
+        if(THIS_PAGE == $key){
+            $nav_list .= '<li class="current menuItem"><a href= "'.$key.'">'.$value.'</a></li>';
+        }else{
+            $nav_list .= '<li class="menuItem"><a href="'.$key.'">'.$value.'</a></li>';
+        }
+    }
+    return $nav_list;
+} // end create_nav function
+
+// page callout
+define('THIS_PAGE', basename($_SERVER['PHP_SELF']));
+switch(THIS_PAGE) {
+    case 'index.php'; 
+    $title = 'Home Page';
+    $body = 'home';
+    break;
+    case 'about.php'; 
+    $title = 'About Page';
+    $body = 'home';
+    break;
+    case 'england-cities.php'; 
+    $title = 'Cities in England';
+    $body = 'home';
+    break;
+    case 'contact.php'; 
+    $title = 'Our Contact Page';
+    $body = 'home';
+    break;
+    case 'landmark-of-the-day.php'; 
+    $title = 'Landmark of the Day';
+    $body = 'daily inner'; 
+    break;
+    case 'thanx.php'; 
+    $title = 'Thank you!';
+    $body = 'home';
+    break;
+    case 'login.php'; 
+    $title = 'Please Login!';
+    $body = 'home';
+    break;
+    case 'register.php'; 
+    $title = 'Register Today!';
+    $body = 'home';
+    break;
+    }
+
+

@@ -1,4 +1,5 @@
-<?php include 'includes/header.php'; ?>
+<?php   include ('config.php'); 
+   include ('includes/header.php');?>
 
     <div id="contact_main">
             <div id="h1-contact">

@@ -1,5 +1,4 @@
-
- <?php
+<?php
 session_start();
 
 include('config.php');
@@ -21,7 +20,7 @@ if(isset($_GET['logout'])) {
 include('includes/header.php');
 if(isset($_SESSION['success'])) : ?>
 
-    <div class="success">
+<div class="success">
     
     <h3>
         <?php echo $_SESSION['success'];
@@ -36,7 +35,7 @@ if(isset($_SESSION['success'])) : ?>
     
     <div class="welcome-logout">
     <h3>
-        Hello <?php echo htmlspecialchars($_SESSION['username']);?>
+        Hello, <?php echo htmlspecialchars($_SESSION['username']);?>
     </h3>
     
     <button><a href="index.php?logout='1' ">Log Out</a></button>

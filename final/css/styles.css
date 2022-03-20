@@ -1,5 +1,5 @@
 * {
-    padding: 0; 
+    padding: 0px; 
     margin: 0; 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -86,11 +86,11 @@ header {
     background: rgb(241, 174, 150);
     height: 80px;
     padding: 2px; 
+    overflow: visible; 
     
 }
 
 .header-inner { 
-    width: 100px; 
     margin-left: 2%;
     height: 80px; 
  
@@ -171,7 +171,7 @@ nav {
     clear: block; 
     height: 30px; 
     margin-bottom: 2%;
-   
+    
     
 }
 

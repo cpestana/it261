@@ -1,10 +1,4 @@
 
- <?php 
-   include ('config.php'); 
-   
-   
-   ?>
-
 <form action="<?php htmlspecialchars($_SERVER['PHP_SELF'])?>" method="post">
                 <fieldset>
                     <label for="first_name">First Name:</label>
@@ -56,6 +50,7 @@
                 <option value="water" <?php if (isset($_POST['view']) && $_POST['view'] == 'water') {
     echo 'selected="unselected"';
 }?>>Water</option>
+
                 <span class="error">
                     <?php echo $view_err; ?>
                 </span>
