@@ -13,6 +13,7 @@
 include('server.php');
 
 
+
 ?>
 <div id="wrapper">
 <div id="login-h1">
@@ -59,3 +60,4 @@ include('server.php');
     <span class="block"><a href="login.php">Log in here</a></span>
     </div>
 </div><!--close wrapper-->
+

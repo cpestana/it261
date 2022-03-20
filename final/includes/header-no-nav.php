@@ -1,11 +1,4 @@
 
-<?php
-
-include('config.php'); 
-
-//we need to define the page that we are on as page
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
