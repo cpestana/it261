@@ -239,6 +239,14 @@ define('DEBUG', 'TRUE');  // We want to see our errors
 
 include('credentials.php');
 
+// initialize/define our variables
+$first_name = '';
+$last_name = '';
+$email = '';
+$username = '';
+$password = '';
+$success = 'You have successfully logged on!';
+$errors = array();
 
   
 
